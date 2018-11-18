@@ -1,8 +1,7 @@
 ﻿namespace DndHelperApiDal.Models
 {
-    public class VillianObjective
+    public class VillianObjective : BaseModel
     {
         public string Objective { get; set; }
-        public string Scheme { get; set; }
     }
 }

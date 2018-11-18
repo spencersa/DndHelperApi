@@ -2,9 +2,8 @@
 
 namespace DndHelperApiDal.Models
 {
-    public class VillianObjectiveSchemes
+    public class VillianObjectiveSchemes : VillianObjectiveScheme
     {
-        public string Objective { get; set; }
-        public IEnumerable<string> Schemes { get; set; }
+        public new IEnumerable<string> Scheme { get; set; }
     }
 }

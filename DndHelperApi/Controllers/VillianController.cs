@@ -17,8 +17,16 @@ namespace DndHelperApi.Controllers
             _villianService = villianService;
         }
 
+        [HttpGet]
+        [Route("GetVillianObjectives")]
+        public async Task<IEnumerable<VillianObjective>> GetVillianObjectives()
+        {
+            return await _villianService.GetVillianObjectivesAsync();
+        }
+
         // GET api/values
         [HttpGet]
+        [Route("GetVillianObjectivesWithSchemes")]
         public async Task<IEnumerable<VillianObjectiveSchemes>> GetVillianObjectivesWithSchemes()
         {
             return await _villianService.GetVillianObjectiveSchemesAsync();
