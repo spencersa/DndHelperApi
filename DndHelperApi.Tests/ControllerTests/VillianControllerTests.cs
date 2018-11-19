@@ -42,5 +42,29 @@ namespace DndHelperApi.Tests.ControllerTests
 
             result.Should().BeEquivalentTo(expectedVillianObjectiveSchemes);
         }
+
+        [Fact]
+        public async Task Should_GetVillianMethods()
+        {
+            var expectedVillianMethods = Fixture.CreateMany<VillianMethod>();
+            _mockVillianService.Setup(x => x.GetVillianMethodsAsync()).ReturnsAsync(expectedVillianMethods);
+
+            var villianController = new VillianController(_mockVillianService.Object);
+            var result = await villianController.GetVillianMethods();
+
+            result.Should().BeEquivalentTo(expectedVillianMethods);
+        }
+
+        [Fact]
+        public async Task Should_GetVillianMethodsWithSubMethods()
+        {
+            var expectedVillianMethodsWithSubMethods = Fixture.CreateMany<VillianMethodsWithSubMethods>();
+            _mockVillianService.Setup(x => x.GetVillianMethodsWithSubMethodsAsync()).ReturnsAsync(expectedVillianMethodsWithSubMethods);
+
+            var villianController = new VillianController(_mockVillianService.Object);
+            var result = await villianController.GetVillianMethodsWithSubMethodsAsync();
+
+            result.Should().BeEquivalentTo(expectedVillianMethodsWithSubMethods);
+        }
     }
 }

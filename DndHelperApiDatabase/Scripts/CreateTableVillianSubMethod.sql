@@ -1,0 +1,14 @@
+﻿CREATE TABLE [dbo].[VillianSubMethod](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[SubMethod] [nvarchar](255) NULL,
+	[VillanMethodId] [int] NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[VillianSubMethod]  WITH CHECK ADD FOREIGN KEY([VillanMethodId])
+REFERENCES [dbo].[VillianMethod] ([Id])
+GO

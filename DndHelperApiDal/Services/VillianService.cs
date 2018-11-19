@@ -14,6 +14,8 @@ namespace DndHelperApiDal.Services
     {
         Task<IEnumerable<VillianObjective>> GetVillianObjectivesAsync();
         Task<IEnumerable<VillianObjectiveSchemes>> GetVillianObjectiveSchemesAsync();
+        Task<IEnumerable<VillianMethod>> GetVillianMethodsAsync();
+        Task<IEnumerable<VillianMethodsWithSubMethods>> GetVillianMethodsWithSubMethodsAsync();
     }
 
     public class VillianService : IVillianService
@@ -44,6 +46,25 @@ namespace DndHelperApiDal.Services
             });
 
             return villianObjectiveWithSchemes;
+        }
+
+        public async Task<IEnumerable<VillianMethod>> GetVillianMethodsAsync()
+        {
+            return await _repository.QueryAsync<VillianMethod>(VillianQueries.GetVillianMethods, CommandType.Text);
+        }
+
+        public async Task<IEnumerable<VillianMethodsWithSubMethods>> GetVillianMethodsWithSubMethodsAsync()
+        {
+            var queryResult = await _repository.QueryAsync<VillianSubMethod>(VillianQueries.GetVillianSubMethods, CommandType.Text);
+
+            var villianMethodsWithSubMethods = queryResult.GroupBy(x => x.Id).Select(x => new VillianMethodsWithSubMethods
+            {
+                Id = x.First().Id,
+                Method = x.First().Method,
+                SubMethods = x.Select(method => method.SubMethod)
+            });
+
+            return villianMethodsWithSubMethods;
         }
     }
 }

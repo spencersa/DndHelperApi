@@ -32,6 +32,20 @@ namespace DndHelperApi.Controllers
             return await _villianService.GetVillianObjectiveSchemesAsync();
         }
 
+        [HttpGet]
+        [Route("GetVillianMethods")]
+        public async Task<IEnumerable<VillianMethod>> GetVillianMethods()
+        {
+            return await _villianService.GetVillianMethodsAsync();
+        }
+
+        [HttpGet]
+        [Route("GetVillianMethodsWithSubMethods")]
+        public async Task<IEnumerable<VillianMethod>> GetVillianMethodsWithSubMethodsAsync()
+        {
+            return await _villianService.GetVillianMethodsWithSubMethodsAsync();
+        }
+
         //// GET api/values/5
         //[HttpGet("{id}")]
         //public ActionResult<string> Get(int id)

@@ -96,5 +96,75 @@ namespace DndHelperApiDal.Tests
 
             result.Should().BeEquivalentTo(expected);
         }
+
+        [Fact]
+        public async Task Should_GetVillianMethodsAsync()
+        {
+            var expected = Fixture.CreateMany<VillianMethod>();
+            _mockRepository.Setup(x => x.QueryAsync<VillianMethod>(VillianQueries.GetVillianMethods, CommandType.Text)).ReturnsAsync(expected);
+            var villianService = new VillianService(_configuration, _mockRepository.Object);
+            var result = await villianService.GetVillianMethodsAsync();
+
+            result.Should().BeEquivalentTo(expected);
+        }
+
+        [Fact]
+        public async Task Should_GetVillianMethodsWithSubMethodsAsync()
+        {
+            var methods = Fixture.CreateMany<string>(2).ToList();
+            var subMethods = Fixture.CreateMany<string>(3).ToList();
+
+            var villianSubMethods = new List<VillianSubMethod>
+            {
+                new VillianSubMethod
+                {
+                    Id = 1,
+                    Method = methods[0],
+                    SubMethod = subMethods[0]
+                },
+                new VillianSubMethod
+                {
+                    Id = 1,
+                    Method = methods[0],
+                    SubMethod = subMethods[1]
+                },
+                new VillianSubMethod
+                {
+                    Id = 2,
+                    Method = methods[1],
+                    SubMethod = subMethods[2]
+                }
+            };
+
+            var expected = new List<VillianMethodsWithSubMethods>
+            {
+                new VillianMethodsWithSubMethods
+                {
+                    Id = 1,
+                    Method = methods[0],
+                    SubMethods = new List<string>
+                    {
+                        subMethods[0],
+                        subMethods[1]
+                    }
+                },
+                new VillianMethodsWithSubMethods
+                {
+                    Id = 2,
+                    Method = methods[1],
+                    SubMethods = new List<string>
+                    {
+                        subMethods[2]
+                    }
+                }
+            };
+
+            _mockRepository.Setup(x => x.QueryAsync<VillianSubMethod>(VillianQueries.GetVillianSubMethods, CommandType.Text)).ReturnsAsync(villianSubMethods);
+
+            var villianService = new VillianService(_configuration, _mockRepository.Object);
+            var result = await villianService.GetVillianMethodsWithSubMethodsAsync();
+
+            result.Should().BeEquivalentTo(expected);
+        }
     }
 }
