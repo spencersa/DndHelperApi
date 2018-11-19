@@ -11,11 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DndHelperApiDal", "DndHelpe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DndHelperApiDatabase", "DndHelperApiDatabase\DndHelperApiDatabase.csproj", "{3554D0E8-65B8-4F5E-8553-EAFC9F877E1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DndHelperApiDal.Tests", "DndHelperApiDal.Tests\DndHelperApiDal.Tests.csproj", "{CF4837F9-AF40-4572-9506-62DFF3D1FCF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DndHelperApiDal.Tests", "DndHelperApiDal.Tests\DndHelperApiDal.Tests.csproj", "{CF4837F9-AF40-4572-9506-62DFF3D1FCF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DndHelperApiCore", "DndHelperApiCore\DndHelperApiCore.csproj", "{7BA0C3DC-5660-4299-BF08-68030507578A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DndHelperApiCore", "DndHelperApiCore\DndHelperApiCore.csproj", "{7BA0C3DC-5660-4299-BF08-68030507578A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DndHelperApiCore.Tests", "DndHelperApiCore.Tests\DndHelperApiCore.Tests.csproj", "{DC827AE9-CBC9-4EA9-8A9D-834700A3B3E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DndHelperApiCore.Tests", "DndHelperApiCore.Tests\DndHelperApiCore.Tests.csproj", "{DC827AE9-CBC9-4EA9-8A9D-834700A3B3E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

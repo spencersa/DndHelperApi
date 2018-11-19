@@ -62,7 +62,7 @@ namespace DndHelperApiDal.Services
             {
                 Id = x.First().Id,
                 Method = x.First().Method,
-                SubMethods = x.Select(method => method.SubMethod)
+                SubMethods = x.First().SubMethod == null ? null : x.Select(method => method.SubMethod)
             });
 
             return villianMethodsWithSubMethods;
