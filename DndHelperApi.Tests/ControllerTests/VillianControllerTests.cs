@@ -62,9 +62,21 @@ namespace DndHelperApi.Tests.ControllerTests
             _mockVillianService.Setup(x => x.GetVillianMethodsWithSubMethodsAsync()).ReturnsAsync(expectedVillianMethodsWithSubMethods);
 
             var villianController = new VillianController(_mockVillianService.Object);
-            var result = await villianController.GetVillianMethodsWithSubMethodsAsync();
+            var result = await villianController.GetVillianMethodsWithSubMethods();
 
             result.Should().BeEquivalentTo(expectedVillianMethodsWithSubMethods);
+        }
+
+        [Fact]
+        public async Task Should_GetVillianWeaknessesAsync()
+        {
+            var expectedVillianWeaknesss = Fixture.CreateMany<VillianWeakness>();
+            _mockVillianService.Setup(x => x.GetVillianWeaknessesAsync()).ReturnsAsync(expectedVillianWeaknesss);
+
+            var villianController = new VillianController(_mockVillianService.Object);
+            var result = await villianController.GetVillianWeaknesses();
+
+            result.Should().BeEquivalentTo(expectedVillianWeaknesss);
         }
     }
 }

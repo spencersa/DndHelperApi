@@ -16,6 +16,7 @@ namespace DndHelperApiDal.Services
         Task<IEnumerable<VillianObjectiveSchemes>> GetVillianObjectiveSchemesAsync();
         Task<IEnumerable<VillianMethod>> GetVillianMethodsAsync();
         Task<IEnumerable<VillianMethodsWithSubMethods>> GetVillianMethodsWithSubMethodsAsync();
+        Task<IEnumerable<VillianWeakness>> GetVillianWeaknessesAsync();
     }
 
     public class VillianService : IVillianService
@@ -65,6 +66,11 @@ namespace DndHelperApiDal.Services
             });
 
             return villianMethodsWithSubMethods;
+        }
+
+        public async Task<IEnumerable<VillianWeakness>> GetVillianWeaknessesAsync()
+        {
+            return await _repository.QueryAsync<VillianWeakness>(VillianQueries.GetVillianWeaknesses, CommandType.Text);
         }
     }
 }

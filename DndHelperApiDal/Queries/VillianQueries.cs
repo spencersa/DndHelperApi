@@ -25,5 +25,10 @@
                      ,vsm.SubMethod
               FROM TestDb.dbo.VillianMethod vm
               LEFT JOIN TestDb.dbo.VillianSubMethod vsm ON vm.Id = vsm.VillanMethodId";
+
+        public const string GetVillianWeaknesses =
+              @"SELECT vw.Id
+                      ,vw.Weakness
+              FROM TestDb.dbo.VillianWeakness vw";
     }
 }

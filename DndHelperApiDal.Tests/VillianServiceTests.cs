@@ -166,5 +166,16 @@ namespace DndHelperApiDal.Tests
 
             result.Should().BeEquivalentTo(expected);
         }
+
+        [Fact]
+        public async Task Should_VillianWeaknessesAsync()
+        {
+            var expected = Fixture.CreateMany<VillianWeakness>();
+            _mockRepository.Setup(x => x.QueryAsync<VillianWeakness>(VillianQueries.GetVillianWeaknesses, CommandType.Text)).ReturnsAsync(expected);
+            var villianService = new VillianService(_configuration, _mockRepository.Object);
+            var result = await villianService.GetVillianWeaknessesAsync();
+
+            result.Should().BeEquivalentTo(expected);
+        }
     }
 }
