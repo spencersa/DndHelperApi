@@ -1,5 +1,4 @@
-﻿using DndHelperApiCore;
-using DndHelperApiCore.Models;
+﻿using DndHelperApiCore.Models;
 using DndHelperApiDal.Models;
 using DndHelperApiDal.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -13,12 +12,10 @@ namespace DndHelperApi.Controllers
     public class VillianController : ControllerBase
     {
         private readonly IVillianService _villianService;
-        private readonly IRandomizer _randomizer;
 
-        public VillianController(IVillianService villianService, IRandomizer randomizer)
+        public VillianController(IVillianService villianService)
         {
             _villianService = villianService;
-            _randomizer = randomizer;
         }
 
         [HttpGet]
@@ -61,7 +58,7 @@ namespace DndHelperApi.Controllers
         [Route("GetRandomVillian")]
         public async Task<Villian> GetRandomVillian()
         {
-            return await _randomizer.GetRandomVillianAsync();
+            return await _villianService.GetRandomVillian();
         }
 
         //// GET api/values/5

@@ -1,5 +1,4 @@
-﻿using DndHelperApiCore;
-using DndHelperApiDal.Configurations;
+﻿using DndHelperApiDal.Configurations;
 using DndHelperApiDal.Repositories;
 using DndHelperApiDal.Services;
 using Microsoft.AspNetCore.Builder;
@@ -38,7 +37,6 @@ namespace DndHelperApi
             services.Configure<ConnectionConfiguration>(Configuration.GetSection("ConnectionConfiguration"));
             services.AddSingleton<IVillianService, VillianService>();
             services.AddSingleton<IRepository, Repository>();
-            services.AddSingleton<IRandomizer, Randomizer>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

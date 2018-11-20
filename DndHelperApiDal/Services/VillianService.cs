@@ -1,4 +1,6 @@
-﻿using DndHelperApiDal.Configurations;
+﻿using DndHelperApiCore.Extensions;
+using DndHelperApiCore.Models;
+using DndHelperApiDal.Configurations;
 using DndHelperApiDal.Models;
 using DndHelperApiDal.Queries;
 using DndHelperApiDal.Repositories;
@@ -17,6 +19,7 @@ namespace DndHelperApiDal.Services
         Task<IEnumerable<VillianMethod>> GetVillianMethodsAsync();
         Task<IEnumerable<VillianMethodsWithSubMethods>> GetVillianMethodsWithSubMethodsAsync();
         Task<IEnumerable<VillianWeakness>> GetVillianWeaknessesAsync();
+        Task<Villian> GetRandomVillian();
     }
 
     public class VillianService : IVillianService
@@ -71,6 +74,29 @@ namespace DndHelperApiDal.Services
         public async Task<IEnumerable<VillianWeakness>> GetVillianWeaknessesAsync()
         {
             return await _repository.QueryAsync<VillianWeakness>(VillianQueries.GetVillianWeaknesses, CommandType.Text);
+        }
+
+        public async Task<Villian> GetRandomVillian()
+        {
+            var tasks = new List<Task>();
+            var objectivesTask = GetVillianObjectiveSchemesAsync();
+            var methodsTask = GetVillianMethodsWithSubMethodsAsync();
+            var weaknessTask = GetVillianWeaknessesAsync();
+
+            await Task.WhenAll(objectivesTask, methodsTask, weaknessTask);
+
+            var objective = objectivesTask.Result.PickRandom();
+            var method = methodsTask.Result.PickRandom();
+            var weakness = weaknessTask.Result.PickRandom();
+
+            return new Villian
+            {
+                Objective = $"{objective.Objective}: {objective.Scheme.PickRandom()}",
+                Method = method.SubMethods == null ?
+                    method.Method :
+                    $"{method.Method}: {method.SubMethods.PickRandom()}",
+                Weakness = weakness.Weakness
+            };
         }
     }
 }
