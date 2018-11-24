@@ -2,7 +2,7 @@
 {
     public class NpcIdeals : BaseModel
     {
-        public string Ideals { get; set; }
-        public int AlignmentId { get; set; }
+        public string Ideal { get; set; }
+        public string AlignmentName { get; set; }
     }
 }

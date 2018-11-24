@@ -36,7 +36,10 @@ namespace DndHelperApi
             services.AddOptions();
             services.Configure<ConnectionConfiguration>(Configuration.GetSection("ConnectionConfiguration"));
             services.AddSingleton<IVillianService, VillianService>();
+            services.AddSingleton<INpcService, NpcService>();
+            services.AddSingleton<IAlignmentService, AlignmentService>();
             services.AddSingleton<IRepository, Repository>();
+            services.AddSingleton<IRaceService, RaceService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

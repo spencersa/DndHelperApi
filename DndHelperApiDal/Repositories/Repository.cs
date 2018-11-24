@@ -12,7 +12,9 @@ namespace DndHelperApiDal.Repositories
     public interface IRepository
     {
         Task<IEnumerable<T>> QueryAsync<T>(string query, CommandType commandType);
+        Task<IEnumerable<T>> QueryAsync<T>(string query, object parameters, CommandType commandType);
         IEnumerable<T> Query<T>(string query, CommandType commandType);
+        IEnumerable<T> Query<T>(string query, object parameters, CommandType commandType);
     }
 
     public class Repository : IRepository
@@ -36,6 +38,17 @@ namespace DndHelperApiDal.Repositories
             });
         }
 
+        public async Task<IEnumerable<T>> QueryAsync<T>(string query, object parameters, CommandType commandType)
+        {
+            return await ExecuteQueryAsync(async c =>
+            {
+                return await c.QueryAsync<T>(
+                    query,
+                    parameters,
+                    commandType: commandType);
+            });
+        }
+
         public IEnumerable<T> Query<T>(string query, CommandType commandType)
         {
             return ExecuteQuery(c =>
@@ -43,6 +56,17 @@ namespace DndHelperApiDal.Repositories
                 return c.Query<T>(
                     query,
                     commandType);
+            });
+        }
+
+        public IEnumerable<T> Query<T>(string query, object parameters, CommandType commandType)
+        {
+            return ExecuteQuery(c =>
+            {
+                return c.Query<T>(
+                    query,
+                    parameters,
+                    commandType: commandType);
             });
         }
 
