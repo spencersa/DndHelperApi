@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MongoDB.Driver;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace DndHelperApi
@@ -35,11 +36,10 @@ namespace DndHelperApi
             });
             services.AddOptions();
             services.Configure<ConnectionConfiguration>(Configuration.GetSection("ConnectionConfiguration"));
-            services.AddSingleton<IVillianService, VillianService>();
-            services.AddSingleton<INpcService, NpcService>();
-            services.AddSingleton<IAlignmentService, AlignmentService>();
             services.AddSingleton<IRepository, Repository>();
-            services.AddSingleton<IRaceService, RaceService>();
+            services.AddSingleton<IDocumentService, DocumentService>();
+            services.AddSingleton<IMongoClient, MongoClient>(client => new MongoClient(Configuration.GetSection("ConnectionConfiguration:DndHelperMongoDbConnectionString").Value));
+            services.AddSingleton<IMongoDbRepo, MongoDbRepo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
