@@ -24,4 +24,8 @@
     <ProjectReference Include="..\DndHelperApi\DndHelperApi.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ControllerTests\" />
+  </ItemGroup>
+
 </Project>

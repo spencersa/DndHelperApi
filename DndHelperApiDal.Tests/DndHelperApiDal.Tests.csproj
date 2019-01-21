@@ -24,4 +24,10 @@
     <ProjectReference Include="..\DndHelperApiDal\DndHelperApiDal.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Classes.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

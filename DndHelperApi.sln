@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DndHelperApi.Tests", "DndHe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DndHelperApiDal", "DndHelperApiDal\DndHelperApiDal.csproj", "{1EAA8189-EC64-4F52-B1E4-F00FDCA8F767}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DndHelperApiDatabase", "DndHelperApiDatabase\DndHelperApiDatabase.csproj", "{3554D0E8-65B8-4F5E-8553-EAFC9F877E1D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DndHelperApiDal.Tests", "DndHelperApiDal.Tests\DndHelperApiDal.Tests.csproj", "{CF4837F9-AF40-4572-9506-62DFF3D1FCF5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DndHelperApiCore", "DndHelperApiCore\DndHelperApiCore.csproj", "{7BA0C3DC-5660-4299-BF08-68030507578A}"
@@ -35,10 +33,6 @@ Global
 		{1EAA8189-EC64-4F52-B1E4-F00FDCA8F767}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EAA8189-EC64-4F52-B1E4-F00FDCA8F767}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EAA8189-EC64-4F52-B1E4-F00FDCA8F767}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3554D0E8-65B8-4F5E-8553-EAFC9F877E1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3554D0E8-65B8-4F5E-8553-EAFC9F877E1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3554D0E8-65B8-4F5E-8553-EAFC9F877E1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3554D0E8-65B8-4F5E-8553-EAFC9F877E1D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CF4837F9-AF40-4572-9506-62DFF3D1FCF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CF4837F9-AF40-4572-9506-62DFF3D1FCF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF4837F9-AF40-4572-9506-62DFF3D1FCF5}.Release|Any CPU.ActiveCfg = Release|Any CPU

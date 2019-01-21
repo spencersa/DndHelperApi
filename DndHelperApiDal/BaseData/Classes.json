@@ -1,0 +1,22 @@
+﻿{
+  "Id": "Classes",
+  "Classes": [
+    {
+      "Name": "Barbarian",
+      "Subclasses": [
+        {
+          "Name": "Path of the Berserker"
+        },
+        {
+          "Name": "Path of the Totem Warrior"
+        }
+      ]
+    },
+    {
+      "Name": "Bard"
+    },
+    {
+      "Name": "Cleric"
+    }
+  ]
+}
