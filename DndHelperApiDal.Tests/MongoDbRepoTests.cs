@@ -2,7 +2,6 @@
 using DndHelperApiDal.Repositories;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
-using Newtonsoft.Json;
 using System;
 using System.IO;
 using System.Threading.Tasks;
@@ -18,7 +17,7 @@ namespace DndHelperApiDal.Tests
         {
             var options = Options.Create(new ConnectionConfiguration
             {
-                DndHelperMongoDbConnectionString = "mongodb+srv://DndHelper:XXXXXXXXXXXXXXX@cluster0-oe5pi.azure.mongodb.net/test?retryWrites=true",
+                DndHelperMongoDbConnectionString = "mongodb+srv://DndHelper:XXXXXXX@cluster0-oe5pi.azure.mongodb.net/test?retryWrites=true",
                 DatabaseName = "DndHelper"
             });
 
@@ -29,11 +28,16 @@ namespace DndHelperApiDal.Tests
         }
 
         [Fact]
-        public async Task MongoTest()
+        public async Task UploadBaseData()
         {
-            var testJson = JsonConvert.SerializeObject(File.ReadAllText(Path.Combine(AppContext.BaseDirectory, "Classes.json")));
+            var directory = new DirectoryInfo(@"C:\temp\Data\");
+            var files = directory.GetFiles("*.json");
 
-            await _mongoDbRepo.UpsertJsonToCollection("Test", "Classes", File.ReadAllText(Path.Combine(AppContext.BaseDirectory, "Classes.json")));
+            foreach (var file in files)
+            {
+                var json = File.ReadAllText(file.FullName);
+                await _mongoDbRepo.UpsertJsonToCollection("Test", Path.GetFileNameWithoutExtension(file.FullName), json);
+            }
         }
 
         public void Dispose()

@@ -1,0 +1,589 @@
+{
+  "Id": "NpcAppearance",
+  "Appearances":[
+  {
+    "feature": "Distinctive jewelry: earrings, necklace, circlet,\r\nbracelets",
+    "id": 1
+  },
+  {
+    "feature": "Piercings",
+    "id": 2
+  },
+  {
+    "feature": "Flamboyant or outlandish clothes",
+    "id": 3
+  },
+  {
+    "feature": "Formal and clean clothes",
+    "id": 4
+  },
+  {
+    "feature": "Ragged and dirty clothes",
+    "id": 5
+  },
+  {
+    "feature": "Pronounced scar",
+    "id": 6
+  },
+  {
+    "feature": "Missing teeth",
+    "id": 7
+  },
+  {
+    "feature": "Missing fingers",
+    "id": 8
+  },
+  {
+    "feature": "Unusual eye color (or two different colors)",
+    "id": 9
+  },
+  {
+    "feature": "Tattoos",
+    "id": 10
+  },
+  {
+    "feature": "Birthmark",
+    "id": 11
+  },
+  {
+    "feature": "Unusual skin color",
+    "id": 12
+  },
+  {
+    "feature": "Bald",
+    "id": 13
+  },
+  {
+    "feature": "Braided beard or hair",
+    "id": 14
+  },
+  {
+    "feature": "Unusual hair color",
+    "id": 15
+  },
+  {
+    "feature": "Nervous eye twitch",
+    "id": 16
+  },
+  {
+    "feature": "Distinctive nose",
+    "id": 17
+  },
+  {
+    "feature": "Distinctive posture (crooked or rigid)",
+    "id": 18
+  },
+  {
+    "feature": "Exceptionally beautiful",
+    "id": 19
+  },
+  {
+    "feature": "Exceptionally ugly",
+    "id": 20
+  },
+  {
+    "feature": "Sleepy eyes",
+    "id": 147
+  },
+  {
+    "feature": "Shifty eyes",
+    "id": 148
+  },
+  {
+    "feature": "Watery eyes",
+    "id": 149
+  },
+  {
+    "feature": "Bright eyes",
+    "id": 150
+  },
+  {
+    "feature": "Cold eyes",
+    "id": 151
+  },
+  {
+    "feature": "Smiling eyes",
+    "id": 152
+  },
+  {
+    "feature": "Close-set eyes",
+    "id": 153
+  },
+  {
+    "feature": "Wild eyes",
+    "id": 154
+  },
+  {
+    "feature": "Distant eyes",
+    "id": 155
+  },
+  {
+    "feature": "A lazy eye",
+    "id": 156
+  },
+  {
+    "feature": "Piercing eyes",
+    "id": 157
+  },
+  {
+    "feature": "Watchful eyes",
+    "id": 158
+  },
+  {
+    "feature": "Dark eyes",
+    "id": 159
+  },
+  {
+    "feature": "Hooded eyes",
+    "id": 160
+  },
+  {
+    "feature": "Eyes of two different colors",
+    "id": 161
+  },
+  {
+    "feature": "Slightly crossed eyes",
+    "id": 162
+  },
+  {
+    "feature": "Wide eyes",
+    "id": 163
+  },
+  {
+    "feature": "Beautiful eyes",
+    "id": 164
+  },
+  {
+    "feature": "Beady eyes",
+    "id": 165
+  },
+  {
+    "feature": "Penetrating eyes",
+    "id": 166
+  },
+  {
+    "feature": "Over-sized ears",
+    "id": 167
+  },
+  {
+    "feature": "Long ear lobes",
+    "id": 168
+  },
+  {
+    "feature": "Small ears",
+    "id": 169
+  },
+  {
+    "feature": "Uneven ears",
+    "id": 170
+  },
+  {
+    "feature": "Hairy ears",
+    "id": 171
+  },
+  {
+    "feature": "Pointy ears",
+    "id": 172
+  },
+  {
+    "feature": "Short ear lobes",
+    "id": 173
+  },
+  {
+    "feature": "Ears that stick out",
+    "id": 174
+  },
+  {
+    "feature": "Jug-handle ears",
+    "id": 175
+  },
+  {
+    "feature": "Elaborately pierced ears",
+    "id": 176
+  },
+  {
+    "feature": "Cauliflower ears",
+    "id": 177
+  },
+  {
+    "feature": "Ears with improbable tufts of hair",
+    "id": 178
+  },
+  {
+    "feature": "Full lips",
+    "id": 179
+  },
+  {
+    "feature": "Buck-teeth",
+    "id": 180
+  },
+  {
+    "feature": "Thin lips",
+    "id": 181
+  },
+  {
+    "feature": "Rotting teeth",
+    "id": 182
+  },
+  {
+    "feature": "Crooked teeth",
+    "id": 183
+  },
+  {
+    "feature": "A broken or missing tooth",
+    "id": 184
+  },
+  {
+    "feature": "Pursed lips",
+    "id": 185
+  },
+  {
+    "feature": "Dry, cracked lips",
+    "id": 186
+  },
+  {
+    "feature": "One or more false teeth",
+    "id": 187
+  },
+  {
+    "feature": "A mouth that hangs open",
+    "id": 188
+  },
+  {
+    "feature": "A crooked nose",
+    "id": 189
+  },
+  {
+    "feature": "A bulbous nose",
+    "id": 190
+  },
+  {
+    "feature": "A narrow nose",
+    "id": 191
+  },
+  {
+    "feature": "A button nose",
+    "id": 192
+  },
+  {
+    "feature": "A long nose",
+    "id": 193
+  },
+  {
+    "feature": "A broad nose",
+    "id": 194
+  },
+  {
+    "feature": "An angular nose",
+    "id": 195
+  },
+  {
+    "feature": "A round nose",
+    "id": 196
+  },
+  {
+    "feature": "A broken nose",
+    "id": 197
+  },
+  {
+    "feature": "A hawk-like nose",
+    "id": 198
+  },
+  {
+    "feature": "A wide nose",
+    "id": 199
+  },
+  {
+    "feature": "A delicate nose",
+    "id": 200
+  },
+  {
+    "feature": "A pronounced chin",
+    "id": 201
+  },
+  {
+    "feature": "A cleft chin",
+    "id": 202
+  },
+  {
+    "feature": "A dimple on the chin",
+    "id": 203
+  },
+  {
+    "feature": "A rounded chin",
+    "id": 204
+  },
+  {
+    "feature": "A sharp jawline",
+    "id": 205
+  },
+  {
+    "feature": "A square jaw",
+    "id": 206
+  },
+  {
+    "feature": "A round jaw",
+    "id": 207
+  },
+  {
+    "feature": "An underbite",
+    "id": 208
+  },
+  {
+    "feature": "Thick hair",
+    "id": 209
+  },
+  {
+    "feature": "Wispy hair",
+    "id": 210
+  },
+  {
+    "feature": "Straight hair",
+    "id": 211
+  },
+  {
+    "feature": "Wavy hair",
+    "id": 212
+  },
+  {
+    "feature": "Curly hair",
+    "id": 213
+  },
+  {
+    "feature": "Wiry hair",
+    "id": 214
+  },
+  {
+    "feature": "Oily hair",
+    "id": 215
+  },
+  {
+    "feature": "Lush hair",
+    "id": 216
+  },
+  {
+    "feature": "Poofy hair",
+    "id": 217
+  },
+  {
+    "feature": "Long braids",
+    "id": 218
+  },
+  {
+    "feature": "Braids tight against the head",
+    "id": 219
+  },
+  {
+    "feature": "Very long hair",
+    "id": 220
+  },
+  {
+    "feature": "Greasy hair",
+    "id": 221
+  },
+  {
+    "feature": "Unruly hair",
+    "id": 222
+  },
+  {
+    "feature": "An unusual hairstyle",
+    "id": 223
+  },
+  {
+    "feature": "An outdated hairstyle",
+    "id": 224
+  },
+  {
+    "feature": "A high-maintenance hairstyle",
+    "id": 225
+  },
+  {
+    "feature": "Short-cropped hair",
+    "id": 226
+  },
+  {
+    "feature": "A shaved head",
+    "id": 227
+  },
+  {
+    "feature": "No hair at all",
+    "id": 228
+  },
+  {
+    "feature": "High cheekbones",
+    "id": 229
+  },
+  {
+    "feature": "Tight, drawn cheeks",
+    "id": 230
+  },
+  {
+    "feature": "Chubby cheeks",
+    "id": 231
+  },
+  {
+    "feature": "An unpleasant pustule",
+    "id": 232
+  },
+  {
+    "feature": "A large mole",
+    "id": 233
+  },
+  {
+    "feature": "A beauty mark",
+    "id": 234
+  },
+  {
+    "feature": "Freckles",
+    "id": 235
+  },
+  {
+    "feature": "Terrible scarring",
+    "id": 236
+  },
+  {
+    "feature": "Unusually short",
+    "id": 237
+  },
+  {
+    "feature": "Short in stature",
+    "id": 238
+  },
+  {
+    "feature": "Average height",
+    "id": 239
+  },
+  {
+    "feature": "Slightly above average height",
+    "id": 240
+  },
+  {
+    "feature": "Well above average height",
+    "id": 241
+  },
+  {
+    "feature": "Unusually tall",
+    "id": 242
+  },
+  {
+    "feature": "Thin and delicate",
+    "id": 243
+  },
+  {
+    "feature": "Of average build",
+    "id": 244
+  },
+  {
+    "feature": "Well-muscled",
+    "id": 245
+  },
+  {
+    "feature": "Slightly overweight",
+    "id": 246
+  },
+  {
+    "feature": "Grotesquely obese",
+    "id": 247
+  },
+  {
+    "feature": "Lean and lanky",
+    "id": 248
+  },
+  {
+    "feature": "Lithe and lean",
+    "id": 249
+  },
+  {
+    "feature": "Thin and wiry",
+    "id": 250
+  },
+  {
+    "feature": "Sinewy and strong",
+    "id": 251
+  },
+  {
+    "feature": "Flabby and weak",
+    "id": 252
+  },
+  {
+    "feature": "Lumpy or bent",
+    "id": 253
+  },
+  {
+    "feature": "Thin and flimsy",
+    "id": 254
+  },
+  {
+    "feature": "Soft and chubby",
+    "id": 255
+  },
+  {
+    "feature": "Thin and petite",
+    "id": 256
+  },
+  {
+    "feature": "Pudgy",
+    "id": 257
+  },
+  {
+    "feature": "Big and broad",
+    "id": 258
+  },
+  {
+    "feature": "Stocky and strong",
+    "id": 259
+  },
+  {
+    "feature": "Bony",
+    "id": 260
+  },
+  {
+    "feature": "Wide and ponderous",
+    "id": 261
+  },
+  {
+    "feature": "Covered in hair",
+    "id": 262
+  },
+  {
+    "feature": "Powerful hands",
+    "id": 263
+  },
+  {
+    "feature": "Delicate hands",
+    "id": 264
+  },
+  {
+    "feature": "Rough hands",
+    "id": 265
+  },
+  {
+    "feature": "Soft hands",
+    "id": 266
+  },
+  {
+    "feature": "A light touch",
+    "id": 267
+  },
+  {
+    "feature": "A heavy touch",
+    "id": 268
+  },
+  {
+    "feature": "A jagged scar",
+    "id": 269
+  },
+  {
+    "feature": "A dark purple scar",
+    "id": 270
+  },
+  {
+    "feature": "An angry red scar",
+    "id": 271
+  },
+  {
+    "feature": "A long, thin scar",
+    "id": 272
+  }
+  ]
+}

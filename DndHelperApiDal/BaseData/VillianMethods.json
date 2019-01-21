@@ -1,0 +1,202 @@
+{
+	"Id": "VillianMethods",
+	"Methods" : [
+		{
+			"subMethods": [
+			"Blight",
+			"Crop Failure",
+			"Drought",
+			"Famine"
+			],
+			"method": "Agricultural Devastation",
+			"id": 1
+		},
+	{
+		"subMethods": null,
+		"method": "Assault or beatings",
+		"id": 2
+	},
+	{
+		"subMethods": null,
+		"method": "Bounty hunting or assassination",
+		"id": 3
+	},
+	{
+		"subMethods": [
+		"Bribery",
+		"Enticement",
+		"Eviction",
+		"Imprisonment",
+		"Kidnapping",
+		"Legal intimidation",
+		"Press gangs",
+		"Shackling"
+		],
+		"method": "Captivity or coercion",
+		"id": 4
+	},
+	{
+		"subMethods": [
+		"Breach of contract",
+		"Cheating",
+		"Fast talking ",
+		"Fine print",
+		"Fraud or swindling",
+		"Quackery or tricks "
+		],
+		"method": "Confidence scams",
+		"id": 5
+	},
+	{
+		"subMethods": [
+		"Framing",
+		"Gossiping or slander",
+		"Humiliation",
+		"Libel or insults"
+		],
+		"method": "Defamation",
+		"id": 6
+	},
+	{
+		"subMethods": null,
+		"method": "Dueling",
+		"id": 7
+	},
+	{
+		"subMethods": [
+		"Beheading",
+		"Burning at the stake",
+		"Burying alive",
+		"Crucifixion",
+		"Drawing and quartering",
+		"Hanging",
+		"Impalement",
+		"Sacrifice (living)"
+		],
+		"method": "Execution",
+		"id": 8
+	},
+	{
+		"subMethods": null,
+		"method": "Impersonation or disguise ",
+		"id": 9
+	},
+	{
+		"subMethods": null,
+		"method": "Lying or perjury",
+		"id": 10
+	},
+	{
+		"subMethods": [
+		"Hauntings",
+		"Illusions",
+		"Infernal bargains",
+		"Mind control",
+		"Petrification",
+		"Raising or animating the dead",
+		"Summoning monsters",
+		"Weather control"
+		],
+		"method": "Magical mayhem",
+		"id": 11
+	},
+	{
+		"subMethods": [
+		"Assassination",
+		"Cannibalism",
+		"Dismemberment",
+		"Drowning",
+		"Electrocution",
+		"Euthanasia (involuntary)",
+		"Disease",
+		"Poisoning",
+		"Stabbing",
+		"Strangulation or suffocation"
+		],
+		"method": "Murder",
+		"id": 12
+	},
+	{
+		"subMethods": null,
+		"method": "Neglect",
+		"id": 13
+	},
+	{
+		"subMethods": [
+		"Betrayal or treason",
+		"Conspiracy",
+		"Espionage or spying",
+		"Genocide",
+		"Oppression",
+		"Raising taxes"
+		],
+		"method": "Politics",
+		"id": 14
+	},
+	{
+		"subMethods": [
+		"Curses",
+		"Desecration",
+		"False gods",
+		"Heresy or cults"
+		],
+		"method": "Religion",
+		"id": 15
+	},
+	{
+		"subMethods": null,
+		"method": "Stalking",
+		"id": 16
+	},
+	{
+		"subMethods": [
+		"Arson",
+		"Blackmail or extortion",
+		"Burglary",
+		"Counterfeiting",
+		"Highway robbery",
+		"Looting",
+		"Mugging",
+		"Poaching",
+		"Seizing property",
+		"Smuggling"
+		],
+		"method": "Theft or Property Crime",
+		"id": 17
+	},
+	{
+		"subMethods": [
+		"Acid",
+		"Blinding",
+		"Branding",
+		"Racking",
+		"Thumbscrews",
+		"Whipping"
+		],
+		"method": "Torture",
+		"id": 18
+	},
+	{
+		"subMethods": [
+		"Adultery",
+		"Drugs or alcohol",
+		"Gambling",
+		"Seduction"
+		],
+		"method": "Vice",
+		"id": 19
+	},
+	{
+		"subMethods": [
+		"Ambush",
+		"Invasion",
+		"Massacre",
+		"Mercenaries",
+		"Rebellion",
+		"Terrorism"
+		],
+		"method": "Warfare",
+		"id": 20
+	}	
+	]
+}
