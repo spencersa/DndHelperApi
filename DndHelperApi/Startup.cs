@@ -24,6 +24,7 @@ namespace DndHelperApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddCors();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info
@@ -59,6 +60,10 @@ namespace DndHelperApi
             {
                 app.UseHsts();
             }
+
+            app.UseCors(
+                options => options.WithOrigins("http://localhost:8080").AllowAnyMethod()
+            );
 
             app.UseHttpsRedirection();
             app.UseMvc();

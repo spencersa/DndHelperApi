@@ -3,6 +3,7 @@ using Microsoft.Extensions.Options;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -13,7 +14,8 @@ namespace DndHelperApiDal.Repositories
         Task CreateCollectionAsync(string collectionName);
         Task UpsertJsonToCollection(string collectionName, string documentId, string json);
         Task DropCollectionAsync(string collectionName);
-        Task<BsonDocument> GetJsonByDocumentId(string collectionName, string documentId);
+        Task<BsonDocument> GetBsonDocumentByDocumentId(string collectionName, string documentId);
+        Task<IEnumerable<BsonDocument>> GetAllBsonDocumentsInCollection(string collectionName);
     }
 
     public class MongoDocument
@@ -55,11 +57,17 @@ namespace DndHelperApiDal.Repositories
                 await collection.InsertOneAsync(document);
         }
 
-        public async Task<BsonDocument> GetJsonByDocumentId(string collectionName, string documentId)
+        public async Task<BsonDocument> GetBsonDocumentByDocumentId(string collectionName, string documentId)
         {
             var collection = _database.GetCollection<BsonDocument>(collectionName);
             var filter = Builders<BsonDocument>.Filter.Eq("Id", documentId);
             return await (await collection.FindAsync(filter)).FirstOrDefaultAsync();
+        }
+
+        public async Task<IEnumerable<BsonDocument>> GetAllBsonDocumentsInCollection(string collectionName)
+        {
+            var collection = _database.GetCollection<BsonDocument>(collectionName);
+            return await collection.Find(p => true).ToListAsync();
         }
     }
 }
