@@ -25,12 +25,14 @@ namespace DndHelperApiDal.Services
         public async Task<string> GetDocument(string collectionName, string documentId)
         {
             var document = await _repository.GetBsonDocumentByDocumentId(collectionName, documentId);
-            return document
-                .GetElement(2).Value
+            var json = document
+                .GetElement(2)
                 .ToJson
                 (
                     new JsonWriterSettings { Indent = true }
                 );
+
+            return $"[{json}]";
         }
 
         public async Task<string> GetAllDocuments(string collectionName)
