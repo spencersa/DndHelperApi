@@ -12,7 +12,7 @@ namespace DndHelperApiDal.Repositories
     public interface IMongoDbRepo
     {
         Task CreateCollectionAsync(string collectionName);
-        Task UpsertJsonToCollection(string collectionName, string documentId, string json);
+        Task<bool> UpsertJsonToCollection(string collectionName, string documentId, string json);
         Task DropCollectionAsync(string collectionName);
         Task<BsonDocument> GetBsonDocumentByDocumentId(string collectionName, string documentId);
         Task<IEnumerable<BsonDocument>> GetAllBsonDocumentsInCollection(string collectionName);
@@ -44,7 +44,7 @@ namespace DndHelperApiDal.Repositories
             await _database.DropCollectionAsync(collectionName);
         }
 
-        public async Task UpsertJsonToCollection(string collectionName, string documentId, string json)
+        public async Task<bool> UpsertJsonToCollection(string collectionName, string documentId, string json)
         {
             var collection = _database.GetCollection<BsonDocument>(collectionName);
             var document = BsonSerializer.Deserialize<BsonDocument>(json);
@@ -52,9 +52,14 @@ namespace DndHelperApiDal.Repositories
             var filter = Builders<BsonDocument>.Filter.Eq("Id", documentId);
 
             if ((await collection.FindAsync(filter)).Any())
-                await collection.ReplaceOneAsync(filter, document);
+            {
+                var result = await collection.ReplaceOneAsync(filter, document);
+                return result.ModifiedCount > 0;
+            }
             else
                 await collection.InsertOneAsync(document);
+
+            return true;
         }
 
         public async Task<BsonDocument> GetBsonDocumentByDocumentId(string collectionName, string documentId)

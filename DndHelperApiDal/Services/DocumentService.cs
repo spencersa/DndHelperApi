@@ -1,4 +1,5 @@
-﻿using DndHelperApiDal.Repositories;
+﻿using DndHelperApiDal.Models;
+using DndHelperApiDal.Repositories;
 using MongoDB.Bson;
 using MongoDB.Bson.IO;
 using System.Linq;
@@ -10,6 +11,7 @@ namespace DndHelperApiDal.Services
     {
         Task<string> GetDocument(string collectionName, string documentId);
         Task<string> GetAllDocuments(string collectionName);
+        Task<bool> UpsertDocument(DocumentModelDto doucmentModel);
     }
 
     public class DocumentService : IDocumentService
@@ -48,6 +50,11 @@ namespace DndHelperApiDal.Services
             );
 
             return $"[{string.Join(",", json)}]";
+        }
+
+        public async Task<bool> UpsertDocument(DocumentModelDto documentModelDto)
+        {
+            return await _repository.UpsertJsonToCollection(documentModelDto.CollectionName, documentModelDto.DocumentId, documentModelDto.Json);
         }
     }
 }

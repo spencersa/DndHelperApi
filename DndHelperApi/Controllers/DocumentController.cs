@@ -1,4 +1,5 @@
-﻿using DndHelperApiDal.Services;
+﻿using DndHelperApiDal.Models;
+using DndHelperApiDal.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
@@ -27,6 +28,13 @@ namespace DndHelperApi.Controllers
         public async Task<string> GetAllDocuments(string collectionName)
         {
             return await _documentService.GetAllDocuments(collectionName);
+        }
+
+        [HttpPost]
+        [Route("UpsertDocument")]
+        public async Task<bool> UpsertDocument([FromBody] DocumentModelDto documentModelDto)
+        {
+            return await _documentService.UpsertDocument(documentModelDto);
         }
     }
 }
