@@ -4,6 +4,6 @@
     {
         public string CollectionName { get; set; }
         public string DocumentId { get; set; }
-        public string Json { get; set; }
+        public object Json { get; set; }
     }
 }

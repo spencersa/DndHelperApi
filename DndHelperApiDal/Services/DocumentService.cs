@@ -54,7 +54,8 @@ namespace DndHelperApiDal.Services
 
         public async Task<bool> UpsertDocument(DocumentModelDto documentModelDto)
         {
-            return await _repository.UpsertJsonToCollection(documentModelDto.CollectionName, documentModelDto.DocumentId, documentModelDto.Json);
+            var json = Newtonsoft.Json.JsonConvert.SerializeObject(documentModelDto.Json);
+            return await _repository.UpsertJsonToCollection(documentModelDto.CollectionName, documentModelDto.DocumentId, json);
         }
     }
 }
