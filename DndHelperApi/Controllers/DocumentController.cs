@@ -25,7 +25,7 @@ namespace DndHelperApi.Controllers
 
         [HttpGet]
         [Route("GetAllDocuments")]
-        public async Task<string> GetAllDocuments(string collectionName)
+        public async Task<string> GetAllDocuments(string collectionName = "Test")
         {
             return await _documentService.GetAllDocuments(collectionName);
         }

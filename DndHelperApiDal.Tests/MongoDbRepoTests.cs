@@ -17,7 +17,7 @@ namespace DndHelperApiDal.Tests
         {
             var options = Options.Create(new ConnectionConfiguration
             {
-                DndHelperMongoDbConnectionString = "mongodb+srv://DndHelper:XXXXXXX@cluster0-oe5pi.azure.mongodb.net/test?retryWrites=true",
+                DndHelperMongoDbConnectionString = "mongodb+srv://DndHelper:pbkqqFLy2WIgnMNu@cluster0-oe5pi.azure.mongodb.net/test?retryWrites=true",
                 DatabaseName = "DndHelper"
             });
 

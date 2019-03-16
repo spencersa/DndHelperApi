@@ -48,8 +48,7 @@ namespace DndHelperApiDal.Repositories
         {
             var collection = _database.GetCollection<BsonDocument>(collectionName);
             var document = BsonSerializer.Deserialize<BsonDocument>(json);
-
-            var filter = Builders<BsonDocument>.Filter.Eq("Id", documentId);
+            var filter = Builders<BsonDocument>.Filter.Eq("_id", new ObjectId(documentId));
 
             if ((await collection.FindAsync(filter)).Any())
             {
@@ -57,7 +56,9 @@ namespace DndHelperApiDal.Repositories
                 return result.ModifiedCount > 0;
             }
             else
+            {
                 await collection.InsertOneAsync(document);
+            }
 
             return true;
         }
@@ -65,7 +66,7 @@ namespace DndHelperApiDal.Repositories
         public async Task<BsonDocument> GetBsonDocumentByDocumentId(string collectionName, string documentId)
         {
             var collection = _database.GetCollection<BsonDocument>(collectionName);
-            var filter = Builders<BsonDocument>.Filter.Eq("Id", documentId);
+            var filter = Builders<BsonDocument>.Filter.Eq("_id", new ObjectId(documentId));
             return await (await collection.FindAsync(filter)).FirstOrDefaultAsync();
         }
 

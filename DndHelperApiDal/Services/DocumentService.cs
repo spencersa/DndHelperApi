@@ -2,7 +2,9 @@
 using DndHelperApiDal.Repositories;
 using MongoDB.Bson;
 using MongoDB.Bson.IO;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace DndHelperApiDal.Services
@@ -28,7 +30,6 @@ namespace DndHelperApiDal.Services
         {
             var document = await _repository.GetBsonDocumentByDocumentId(collectionName, documentId);
             var json = document
-                .GetElement(2)
                 .ToJson
                 (
                     new JsonWriterSettings { Indent = true }
@@ -41,15 +42,24 @@ namespace DndHelperApiDal.Services
         {
             var documents = await _repository.GetAllBsonDocumentsInCollection(collectionName);
 
-            var json = documents.Select(document =>
-                document.GetElement(2)
+            var jsonDocuments = documents.Select(document =>
+                document
                 .ToJson
                 (
-                    new JsonWriterSettings { Indent = true }
+                    new JsonWriterSettings { Indent = true, }
                 )
             );
 
-            return $"[{string.Join(",", json)}]";
+            var jsonWithFixedIds = new List<string>();
+
+            foreach (var jsonDocument in jsonDocuments)
+            {
+                var regex = new Regex(@"ObjectId\(" + "\"" + @"(.{24})" + "\"" + @"\)");
+                var groups = regex.Matches(jsonDocument)[0];
+                jsonWithFixedIds.Add(jsonDocument.Replace(groups.Groups[0].Value, $"\"{groups.Groups[1].Value}\""));
+            }
+
+            return $"[{string.Join(",", jsonWithFixedIds)}]";
         }
 
         public async Task<bool> UpsertDocument(DocumentModelDto documentModelDto)
