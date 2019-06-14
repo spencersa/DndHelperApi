@@ -18,11 +18,6 @@ namespace DndHelperApiDal.Repositories
         Task<IEnumerable<BsonDocument>> GetAllBsonDocumentsInCollection(string collectionName);
     }
 
-    public class MongoDocument
-    {
-        public ObjectId _id { get; set; }
-    }
-
     public class MongoDbRepo : IMongoDbRepo
     {
         private readonly IMongoClient _client;
@@ -48,17 +43,20 @@ namespace DndHelperApiDal.Repositories
         {
             var collection = _database.GetCollection<BsonDocument>(collectionName);
             var document = BsonSerializer.Deserialize<BsonDocument>(json);
-            var filter = Builders<BsonDocument>.Filter.Eq("_id", new ObjectId(documentId));
 
-            if ((await collection.FindAsync(filter)).Any())
+            if (!string.IsNullOrWhiteSpace(documentId))
             {
-                var result = await collection.ReplaceOneAsync(filter, document);
-                return result.ModifiedCount > 0;
+                var filter = Builders<BsonDocument>.Filter.Eq("_id", new ObjectId(documentId));
+
+                if ((await collection.FindAsync(filter)).Any())
+                {
+                    var bsonElement = document.Elements.First();
+                    document.RemoveElement(bsonElement);
+                    var result = await collection.ReplaceOneAsync(filter, document);
+                    return result.ModifiedCount > 0;
+                }
             }
-            else
-            {
-                await collection.InsertOneAsync(document);
-            }
+            await collection.InsertOneAsync(document);
 
             return true;
         }
