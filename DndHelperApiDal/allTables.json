@@ -1,0 +1,1626 @@
+[{
+  "_id" : "5c8d1e7d3ca04e2fec0893ff",
+  "Classes" : [{
+      "name" : "Barbarian",
+      "children" : [{
+          "name" : "SubClasses",
+          "children" : [{
+              "name" : "Path of the Berserker"
+            }, {
+              "name" : "Path of the Totem Warrior"
+            }]
+        }]
+    }, {
+      "name" : "Bard"
+    }, {
+      "name" : "Cleric"
+    }, {
+      "name" : "Druid"
+    }, {
+      "name" : "Fighter"
+    }, {
+      "name" : "Monk"
+    }, {
+      "name" : "Paladin"
+    }, {
+      "name" : "Ranger"
+    }, {
+      "name" : "Rogue"
+    }, {
+      "name" : "Sorcerer"
+    }, {
+      "name" : "Warlock"
+    }, {
+      "name" : "Wizard"
+    }, {
+      "name" : "NewClass"
+    }, {
+      "name" : "D"
+    }, {
+      "name" : "D"
+    }, {
+      "name" : "D"
+    }]
+},{
+  "_id" : "5c8d1e7d3ca04e2fec089400",
+  "NpcAbilitiesHigh" : [{
+      "name" : "Strength-powerful, brawny, strong as an ox"
+    }, {
+      "name" : "Dexterity-lithe, agile, graceful"
+    }, {
+      "name" : "Constitution-hardy, hale, healthy"
+    }, {
+      "name" : "Intelligence-studious, learned, inquisitive"
+    }, {
+      "name" : "Wisdom-perceptive, spiritual, insightful"
+    }, {
+      "name" : "Charisma-persuasive, forceful, born leader"
+    }, { }]
+},{
+  "_id" : "5c8d1e7d3ca04e2fec089401",
+  "NpcAbilitiesLow" : [{
+      "name" : "Strength-feeble, scrawny"
+    }, {
+      "name" : "Dexterity-clumsy, fumbling"
+    }, {
+      "name" : "Constitution-sickly, pale"
+    }, {
+      "name" : "Intelligence-dim-witted, slow"
+    }, {
+      "name" : "Wisdom-oblivious, absent minded"
+    }, {
+      "name" : "Charisma-dull, boring"
+    }]
+},{
+  "_id" : "5c8d1e7e3ca04e2fec089402",
+  "NpcAppearance" : [{
+      "name" : "Distinctive jewelry: earrings, necklace, circlet,\r\nbracelets"
+    }, {
+      "name" : "Piercings"
+    }, {
+      "name" : "Flamboyant or outlandish clothes"
+    }, {
+      "name" : "Formal and clean clothes"
+    }, {
+      "name" : "Ragged and dirty clothes"
+    }, {
+      "name" : "Pronounced scar"
+    }, {
+      "name" : "Missing teeth"
+    }, {
+      "name" : "Missing fingers"
+    }, {
+      "name" : "Unusual eye color (or two different colors)"
+    }, {
+      "name" : "Tattoos"
+    }, {
+      "name" : "Birthmark"
+    }, {
+      "name" : "Unusual skin color"
+    }, {
+      "name" : "Bald"
+    }, {
+      "name" : "Braided beard or hair"
+    }, {
+      "name" : "Unusual hair color"
+    }, {
+      "name" : "Nervous eye twitch"
+    }, {
+      "name" : "Distinctive nose"
+    }, {
+      "name" : "Distinctive posture (crooked or rigid)"
+    }, {
+      "name" : "Exceptionally beautiful"
+    }, {
+      "name" : "Exceptionally ugly"
+    }, {
+      "name" : "Sleepy eyes"
+    }, {
+      "name" : "Shifty eyes"
+    }, {
+      "name" : "Watery eyes"
+    }, {
+      "name" : "Bright eyes"
+    }, {
+      "name" : "Cold eyes"
+    }, {
+      "name" : "Smiling eyes"
+    }, {
+      "name" : "Close-set eyes"
+    }, {
+      "name" : "Wild eyes"
+    }, {
+      "name" : "Distant eyes"
+    }, {
+      "name" : "A lazy eye"
+    }, {
+      "name" : "Piercing eyes"
+    }, {
+      "name" : "Watchful eyes"
+    }, {
+      "name" : "Dark eyes"
+    }, {
+      "name" : "Hooded eyes"
+    }, {
+      "name" : "Eyes of two different colors"
+    }, {
+      "name" : "Slightly crossed eyes"
+    }, {
+      "name" : "Wide eyes"
+    }, {
+      "name" : "Beautiful eyes"
+    }, {
+      "name" : "Beady eyes"
+    }, {
+      "name" : "Penetrating eyes"
+    }, {
+      "name" : "Over-sized ears"
+    }, {
+      "name" : "Long ear lobes"
+    }, {
+      "name" : "Small ears"
+    }, {
+      "name" : "Uneven ears"
+    }, {
+      "name" : "Hairy ears"
+    }, {
+      "name" : "Pointy ears"
+    }, {
+      "name" : "Short ear lobes"
+    }, {
+      "name" : "Ears that stick out"
+    }, {
+      "name" : "Jug-handle ears"
+    }, {
+      "name" : "Elaborately pierced ears"
+    }, {
+      "name" : "Cauliflower ears"
+    }, {
+      "name" : "Ears with improbable tufts of hair"
+    }, {
+      "name" : "Full lips"
+    }, {
+      "name" : "Buck-teeth"
+    }, {
+      "name" : "Thin lips"
+    }, {
+      "name" : "Rotting teeth"
+    }, {
+      "name" : "Crooked teeth"
+    }, {
+      "name" : "A broken or missing tooth"
+    }, {
+      "name" : "Pursed lips"
+    }, {
+      "name" : "Dry, cracked lips"
+    }, {
+      "name" : "One or more false teeth"
+    }, {
+      "name" : "A mouth that hangs open"
+    }, {
+      "name" : "A crooked nose"
+    }, {
+      "name" : "A bulbous nose"
+    }, {
+      "name" : "A narrow nose"
+    }, {
+      "name" : "A button nose"
+    }, {
+      "name" : "A long nose"
+    }, {
+      "name" : "A broad nose"
+    }, {
+      "name" : "An angular nose"
+    }, {
+      "name" : "A round nose"
+    }, {
+      "name" : "A broken nose"
+    }, {
+      "name" : "A hawk-like nose"
+    }, {
+      "name" : "A wide nose"
+    }, {
+      "name" : "A delicate nose"
+    }, {
+      "name" : "A pronounced chin"
+    }, {
+      "name" : "A cleft chin"
+    }, {
+      "name" : "A dimple on the chin"
+    }, {
+      "name" : "A rounded chin"
+    }, {
+      "name" : "A sharp jawline"
+    }, {
+      "name" : "A square jaw"
+    }, {
+      "name" : "A round jaw"
+    }, {
+      "name" : "An underbite"
+    }, {
+      "name" : "Thick hair"
+    }, {
+      "name" : "Wispy hair"
+    }, {
+      "name" : "Straight hair"
+    }, {
+      "name" : "Wavy hair"
+    }, {
+      "name" : "Curly hair"
+    }, {
+      "name" : "Wiry hair"
+    }, {
+      "name" : "Oily hair"
+    }, {
+      "name" : "Lush hair"
+    }, {
+      "name" : "Poofy hair"
+    }, {
+      "name" : "Long braids"
+    }, {
+      "name" : "Braids tight against the head"
+    }, {
+      "name" : "Very long hair"
+    }, {
+      "name" : "Greasy hair"
+    }, {
+      "name" : "Unruly hair"
+    }, {
+      "name" : "An unusual hairstyle"
+    }, {
+      "name" : "An outdated hairstyle"
+    }, {
+      "name" : "A high-maintenance hairstyle"
+    }, {
+      "name" : "Short-cropped hair"
+    }, {
+      "name" : "A shaved head"
+    }, {
+      "name" : "No hair at all"
+    }, {
+      "name" : "High cheekbones"
+    }, {
+      "name" : "Tight, drawn cheeks"
+    }, {
+      "name" : "Chubby cheeks"
+    }, {
+      "name" : "An unpleasant pustule"
+    }, {
+      "name" : "A large mole"
+    }, {
+      "name" : "A beauty mark"
+    }, {
+      "name" : "Freckles"
+    }, {
+      "name" : "Terrible scarring"
+    }, {
+      "name" : "Unusually short"
+    }, {
+      "name" : "Short in stature"
+    }, {
+      "name" : "Average height"
+    }, {
+      "name" : "Slightly above average height"
+    }, {
+      "name" : "Well above average height"
+    }, {
+      "name" : "Unusually tall"
+    }, {
+      "name" : "Thin and delicate"
+    }, {
+      "name" : "Of average build"
+    }, {
+      "name" : "Well-muscled"
+    }, {
+      "name" : "Slightly overweight"
+    }, {
+      "name" : "Grotesquely obese"
+    }, {
+      "name" : "Lean and lanky"
+    }, {
+      "name" : "Lithe and lean"
+    }, {
+      "name" : "Thin and wiry"
+    }, {
+      "name" : "Sinewy and strong"
+    }, {
+      "name" : "Flabby and weak"
+    }, {
+      "name" : "Lumpy or bent"
+    }, {
+      "name" : "Thin and flimsy"
+    }, {
+      "name" : "Soft and chubby"
+    }, {
+      "name" : "Thin and petite"
+    }, {
+      "name" : "Pudgy"
+    }, {
+      "name" : "Big and broad"
+    }, {
+      "name" : "Stocky and strong"
+    }, {
+      "name" : "Bony"
+    }, {
+      "name" : "Wide and ponderous"
+    }, {
+      "name" : "Covered in hair"
+    }, {
+      "name" : "Powerful hands"
+    }, {
+      "name" : "Delicate hands"
+    }, {
+      "name" : "Rough hands"
+    }, {
+      "name" : "Soft hands"
+    }, {
+      "name" : "A light touch"
+    }, {
+      "name" : "A heavy touch"
+    }, {
+      "name" : "A jagged scar"
+    }, {
+      "name" : "A dark purple scar"
+    }, {
+      "name" : "An angry red scar"
+    }, {
+      "name" : "A long, thin scar"
+    }]
+},{
+  "_id" : "5c8d1e7e3ca04e2fec089403",
+  "NpcBonds" : [{
+      "name" : "Dedicated to fulfilling a personal life goal"
+    }, {
+      "name" : "Protective of close family members"
+    }, {
+      "name" : "Protective of colleagues or compatriots"
+    }, {
+      "name" : "Loyal to a benefactor, patron, or employer"
+    }, {
+      "name" : "Captivated by a romantic interest"
+    }, {
+      "name" : "Drawn to a special place"
+    }, {
+      "name" : "Protective of a sentimental keepsake"
+    }, {
+      "name" : "Protective of a valuable possession"
+    }, {
+      "name" : "Out for revenge"
+    }, {
+      "name" : "I would die to recover an ancient artifact of my faith that was lost long ago."
+    }, {
+      "name" : "I will someday get revenge on the corrupt temple hierarchy who branded me a heretic."
+    }, {
+      "name" : "I owe me life to the priest who took me in when my parents died."
+    }, {
+      "name" : "Everything I do is for the common people."
+    }, {
+      "name" : "I will do anything to protect the temple where I served."
+    }, {
+      "name" : "I seek to preserve a sacred text that my enemies consider heretical and seek to destroy."
+    }, {
+      "name" : "I fleeced the wrong person and must work to ensure that this individual never crosses paths with me or those I care about."
+    }, {
+      "name" : "I owe everything to my mentor--a horrible person who's probably rotting in jail somewhere."
+    }, {
+      "name" : "Somewhere out there I have a child who doesn't know me. I'm making the world better for him or her."
+    }, {
+      "name" : "I come from a noble family, and one day I'll reclaim my lands and title from those who stole them from me."
+    }, {
+      "name" : "A powerful person killed someone I love. Some day soon, I'll have my revenge."
+    }, {
+      "name" : "I swindled and ruined a person who didn't deserve it. I seek to atone for my misdeeds but might never be able to forgive myself."
+    }, {
+      "name" : "I'm trying to pay off an old debt I owe to a generous benefactor."
+    }, {
+      "name" : "My ill-gotten gains go to support my family."
+    }, {
+      "name" : "Something important was taken from me, and I aim to steal it back."
+    }, {
+      "name" : "I will become the greatest thief that ever lived."
+    }, {
+      "name" : "I'm guilty of a terrible crime. I hope I can redeem myself for it."
+    }, {
+      "name" : "Someone I loved died because of a mistake I made. That will never happen again."
+    }, {
+      "name" : "My instrument is my most treasured possession, and it reminds me of someone I love."
+    }, {
+      "name" : "Someone stole my precious instrument, and someday I'll get it back."
+    }, {
+      "name" : "I want to be famous, whatever it takes."
+    }, {
+      "name" : "I idolize a hero of the old tales and measure my deeds against that person's."
+    }, {
+      "name" : "I will do anything to prove myself superior to me hated rival."
+    }, {
+      "name" : "I would do anything for the other members of my old troupe."
+    }, {
+      "name" : "I have a family, but I have no idea where they are. One day, I hope to see them again."
+    }, {
+      "name" : "I worked the land, I love the land, and I will protect the land."
+    }, {
+      "name" : "A proud noble once gave me a horrible beating, and I will take my revenge on any bully I encounter."
+    }, {
+      "name" : "My tools are symbols of my past life, and I carry them so that I will never forget my roots."
+    }, {
+      "name" : "I protect those who cannot protect themselves."
+    }, {
+      "name" : "I wish my childhood sweetheart had come with me to pursue my destiny."
+    }, {
+      "name" : "The workshop where I learned my trade is the most important place in the world to me."
+    }, {
+      "name" : "I created a great work for someone, and then found them unworthy to receive it. I'm still looking for someone worthy."
+    }, {
+      "name" : "I owe my guild a great debt for forging me into the person I am today."
+    }, {
+      "name" : "I pursue wealth to secure someone's love."
+    }, {
+      "name" : "One day I will return to my guild and prove that I am the greatest artisan of them all."
+    }, {
+      "name" : "I will get revenge on the evil forces that destroyed my place of business and ruined my livelihood."
+    }, {
+      "name" : "Nothing is more important than the other members of my hermitage, order, or association."
+    }, {
+      "name" : "I entered seclusion to hide from the ones who might still be hunting me. I must someday confront them."
+    }, {
+      "name" : "I'm still seeking the enlightenment I pursued in my seclusion, and it still eludes me."
+    }, {
+      "name" : "I entered seclusion because I loved someone I could not have."
+    }, {
+      "name" : "Should my discovery come to light, it could bring ruin to the world."
+    }, {
+      "name" : "My isolation gave me great insight into a great evil that only I can destroy."
+    }, {
+      "name" : "I will face any challenge to win the approval of my family."
+    }, {
+      "name" : "My house's alliance with another noble family must be sustained at all costs."
+    }, {
+      "name" : "Nothing is more important that the other members of my family."
+    }, {
+      "name" : "I am in love with the heir of a family that my family despises."
+    }, {
+      "name" : "My loyalty to my sovereign is unwavering."
+    }, {
+      "name" : "The common folk must see me as a hero of the people."
+    }, {
+      "name" : "My family, clan, or tribe is the most important thing in my life, even when they are far from me."
+    }, {
+      "name" : "An injury to the unspoiled wilderness of my home is an injury to me."
+    }, {
+      "name" : "I will bring terrible wrath down on the evildoers who destroyed my homeland."
+    }, {
+      "name" : "I am the last of my tribe, and it is up to me to ensure their names enter legend."
+    }, {
+      "name" : "I suffer awful visions of a coming disaster and will do anything to prevent it."
+    }, {
+      "name" : "It is my duty to provide children to sustain my tribe."
+    }, {
+      "name" : "It is my duty to protect my students."
+    }, {
+      "name" : "I have an ancient text that holds terrible secrets that must not fall into the wrong hands."
+    }, {
+      "name" : "I work to preserve a library, university, scriptorium, or monastery."
+    }, {
+      "name" : "My life's work is a series of tomes related to a specific field of lore."
+    }, {
+      "name" : "I've been searching my whole life for the answer to a certain question."
+    }, {
+      "name" : "I sold my soul for knowledge. I hope to do great deeds and win it back."
+    }, {
+      "name" : "I'm loyal to my captain first, everything else second."
+    }, {
+      "name" : "The ship is most important--crewmates and captains come and go."
+    }, {
+      "name" : "I'll always remember my first ship."
+    }, {
+      "name" : "In a harbor town, I have a paramour whose eyes nearly stole me from the sea."
+    }, {
+      "name" : "I was cheated of my fair share of the profits, and I want to get my due."
+    }, {
+      "name" : "Ruthless pirates murdered my captain and crewmates, plundered our ship, and left me to die. Vengeance will be mine."
+    }, {
+      "name" : "I would lay down my life for the people I served with."
+    }, {
+      "name" : "Someone saved my life on the battlefield. To this day, I will never leave a friend behind."
+    }, {
+      "name" : "My honor is my life."
+    }, {
+      "name" : "I'll never forget the crushing defeat my company suffered or the enemies who dealt it."
+    }, {
+      "name" : "Those who fight beside me are those worth dying for."
+    }, {
+      "name" : "I fight for those who cannot fight for themselves."
+    }, {
+      "name" : "My town or city is my home, and I'll fight to defend it."
+    }, {
+      "name" : "I sponsor an orphanage to keep others from enduring what I was forced to endure."
+    }, {
+      "name" : "I owe my survival to another urchin who taught me to live on the streets."
+    }, {
+      "name" : "I owe a debt I can never repay to the person who took pity on me."
+    }, {
+      "name" : "I escaped my life of poverty by robbing an important person, and I'm wanted for it."
+    }, {
+      "name" : "No one else is going to have to endure the hardships I've been through."
+    }]
+},{
+  "_id" : "5c8d1e7e3ca04e2fec089404",
+  "NpcFlaws" : [{
+      "name" : "Forbidden love or susceptibility to romance"
+    }, {
+      "name" : "Enjoys decadent pleasures"
+    }, {
+      "name" : "Arrogance"
+    }, {
+      "name" : "Envies another creature's possessions or station"
+    }, {
+      "name" : "Overpowering greed"
+    }, {
+      "name" : "Prone to rage"
+    }, {
+      "name" : "Has a powerful enemy"
+    }, {
+      "name" : "Specific phobia"
+    }, {
+      "name" : "Shameful or scandalous history"
+    }, {
+      "name" : "Secret crime or misdeed"
+    }, {
+      "name" : "Possession offorbidden lore"
+    }, {
+      "name" : "Foolhardy bravery "
+    }, {
+      "name" : "I judge others harshly, and myself even more severely."
+    }, {
+      "name" : "I put too much trust in those who wield power within my temple's hierarchy."
+    }, {
+      "name" : "My piety sometimes leads me to blindly trust those that profess faith in my god."
+    }, {
+      "name" : "I am inflexible in my thinking."
+    }, {
+      "name" : "I am suspicious of strangers and suspect the worst of them."
+    }, {
+      "name" : "Once I pick a goal, I become obsessed with it to the detriment of everything else in my life."
+    }, {
+      "name" : "I can't resist a pretty face."
+    }, {
+      "name" : "I'm always in debt. I spend my ill-gotten gains on decadent luxuries faster than I bring them in."
+    }, {
+      "name" : "I'm convinced that no one could ever fool me in the way I fool others."
+    }, {
+      "name" : "I'm too greedy for my own good. I can't resist taking a risk if there's money involved."
+    }, {
+      "name" : "I can't resist swindling people who are more powerful than me."
+    }, {
+      "name" : "I hate to admit it and will hate myself for it, but I'll run and preserve my own hide if the going gets tough."
+    }, {
+      "name" : "When I see something valuable, I can't think about anything but how to steal it."
+    }, {
+      "name" : "When faced with a choice between money and my friends, I usually choose the money."
+    }, {
+      "name" : "If there's a plan, I'll forget it. If I don't forget it, I'll ignore it."
+    }, {
+      "name" : "I have a 'tell' that reveals when I'm lying."
+    }, {
+      "name" : "I turn tail and run when things go bad."
+    }, {
+      "name" : "An innocent person is in prison for a crime that I committed. I'm okay with that."
+    }, {
+      "name" : "I'll do anything to win fame and renown."
+    }, {
+      "name" : "I'm a sucker for a pretty face."
+    }, {
+      "name" : "A scandal prevents me from ever going home again. That kind of trouble seems to follow me around."
+    }, {
+      "name" : "I once satirized a noble who still wants my head. It was a mistake that I will likely repeat."
+    }, {
+      "name" : "I have trouble keeping my true feelings hidden. My sharp tongue lands me in trouble."
+    }, {
+      "name" : "Despite my best efforts, I am unreliable to my friends."
+    }, {
+      "name" : "The tyrant who rules my land will stop at nothing to see me killed."
+    }, {
+      "name" : "I'm convinced of the significance of my destiny, and blind to my shortcomings and the risk of failure."
+    }, {
+      "name" : "The people who knew me when I was young know my shameful secret, so I can never go home again."
+    }, {
+      "name" : "I have a weakness for the vices of the city, especially hard drink."
+    }, {
+      "name" : "Secretly, I believe that things would be better if I were a tyrant lording over the land."
+    }, {
+      "name" : "I have trouble trusting in my allies."
+    }, {
+      "name" : "I'll do anything to get my hands on something rare or priceless."
+    }, {
+      "name" : "I'm quick to assume that someone is trying to cheat me."
+    }, {
+      "name" : "No one must ever learn that I once stole money from guild coffers."
+    }, {
+      "name" : "I'm never satisfied with what I have--I always want more."
+    }, {
+      "name" : "I would kill to acquire a noble title."
+    }, {
+      "name" : "I'm horribly jealous of anyone who outshines my handiwork. Everywhere I go, I'm surrounded by rivals."
+    }, {
+      "name" : "Now that I've returned to the world, I enjoy its delights a little too much."
+    }, {
+      "name" : "I harbor dark bloodthirsty thoughts that my isolation failed to quell."
+    }, {
+      "name" : "I am dogmatic in my thoughts and philosophy."
+    }, {
+      "name" : "I let my need to win arguments overshadow friendships and harmony."
+    }, {
+      "name" : "I'd risk too much to uncover a lost bit of knowledge."
+    }, {
+      "name" : "I like keeping secrets and won't share them with anyone."
+    }, {
+      "name" : "I secretly believe that everyone is beneath me."
+    }, {
+      "name" : "I hide a truly scandalous secret that could ruin my family forever."
+    }, {
+      "name" : "I too often hear veiled insults and threats in every word addressed to me, and I'm quick to anger."
+    }, {
+      "name" : "I have an insatiable desire for carnal pleasures."
+    }, {
+      "name" : "In fact, the world does revolve around me."
+    }, {
+      "name" : "By my words and actions, I often bring shame to my family."
+    }, {
+      "name" : "I am too enamored of ale, wine, and other intoxicants."
+    }, {
+      "name" : "There's no room for caution in a life lived to the fullest."
+    }, {
+      "name" : "I remember every insult I've received and nurse a silent resentment toward anyone who's ever wronged me."
+    }, {
+      "name" : "I am slow to trust members of other races"
+    }, {
+      "name" : "Violence is my answer to almost any challenge."
+    }, {
+      "name" : "Don't expect me to save those who can't save themselves. It is nature's way that the strong thrive and the weak perish."
+    }, {
+      "name" : "I am easily distracted by the promise of information."
+    }, {
+      "name" : "Most people scream and run when they see a demon. I stop and take notes on its anatomy."
+    }, {
+      "name" : "Unlocking an ancient mystery is worth the price of a civilization."
+    }, {
+      "name" : "I overlook obvious solutions in favor of complicated ones."
+    }, {
+      "name" : "I speak without really thinking through my words, invariably insulting others."
+    }, {
+      "name" : "I can't keep a secret to save my life, or anyone else's."
+    }, {
+      "name" : "I follow orders, even if I think they're wrong."
+    }, {
+      "name" : "I'll say anything to avoid having to do extra work."
+    }, {
+      "name" : "Once someone questions my courage, I never back down no matter how dangerous the situation."
+    }, {
+      "name" : "Once I start drinking, it's hard for me to stop."
+    }, {
+      "name" : "I can't help but pocket loose coins and other trinkets I come across."
+    }, {
+      "name" : "My pride will probably lead to my destruction"
+    }, {
+      "name" : "The monstrous enemy we faced in battle still leaves me quivering with fear."
+    }, {
+      "name" : "I have little respect for anyone who is not a proven warrior."
+    }, {
+      "name" : "I made a terrible mistake in battle that cost many lives--and I would do anything to keep that mistake secret."
+    }, {
+      "name" : "My hatred of my enemies is blind and unreasoning."
+    }, {
+      "name" : "I obey the law, even if the law causes misery."
+    }, {
+      "name" : "I'd rather eat my armor than admit when I'm wrong."
+    }, {
+      "name" : "If I'm outnumbered, I always run away from a fight."
+    }, {
+      "name" : "Gold seems like a lot of money to me, and I'll do just about anything for more of it."
+    }, {
+      "name" : "I will never fully trust anyone other than myself."
+    }, {
+      "name" : "I'd rather kill someone in their sleep than fight fair."
+    }, {
+      "name" : "It's not stealing if I need it more than someone else."
+    }, {
+      "name" : "People who don't take care of themselves get what they deserve."
+    }]
+},{
+  "_id" : "5c8d1e7e3ca04e2fec089405",
+  "NpcIdeals" : [{
+      "name" : "Lawful: Faith. I trust that my deity will guide my actions. I have faith that if I work hard, things will go well."
+    }, {
+      "name" : "Lawful: Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld."
+    }, {
+      "name" : "Lawful: Power. I hope to one day rise to the top of my faith's religious hierarchy."
+    }, {
+      "name" : "Lawful: Fairness. I never target people who can't afford to lose a few coins."
+    }, {
+      "name" : "Lawful: Honor. I don't steal from others in the trade."
+    }, {
+      "name" : "Lawful: Tradition. The stories, legends, and songs of the past must never be forgotten."
+    }, {
+      "name" : "Lawful: Fairness. No one should get preferential treatment before the law, and no one is above the law."
+    }, {
+      "name" : "Lawful: Community. It is the duty of all civilized people to strengthen the bonds of community and the security of civilization."
+    }, {
+      "name" : "Lawful: Logic. Emotions must not cloud our sense of what is right and true, or our logical thinking."
+    }, {
+      "name" : "Lawful: Responsibility. It is my duty to respect the authority of those above me, just as those below me must respect mine."
+    }, {
+      "name" : "Lawful: Honor. If I dishonor myself, I dishonor my whole clan."
+    }, {
+      "name" : "Lawful: Logic. Emotions must not cloud our logical thinking."
+    }, {
+      "name" : "Lawful: Fairness. We all do the work, so we all share in the rewards."
+    }, {
+      "name" : "Lawful: Responsibility. I do what I must and obey just authority."
+    }, {
+      "name" : "Lawful: Community. We have to take care of each other, because no one else is going to do it."
+    }, {
+      "name" : "Neutral: People. I'm loyal to my friends, not to any names, and everyone else can take a trip down the Styx for all I care."
+    }, {
+      "name" : "Neutral: People. I like seeing the smiles on people's faces when I perform. That's all that matters."
+    }, {
+      "name" : "Neutral: Sincerity. There's no good pretending to be something I'm not."
+    }, {
+      "name" : "Neutral: People. I'm committed to the people I care about, not to names."
+    }, {
+      "name" : "Neutral: Live and Let Live. Meddling in the affairs of others only causes trouble."
+    }, {
+      "name" : "Neutral: Nature. The natural world is more important than all the constructs of civilization."
+    }, {
+      "name" : "Neutral: Knowledge. The path to power and self-improvement is through knowledge."
+    }, {
+      "name" : "Neutral: People. I'm committed to my crewmates, not to names."
+    }, {
+      "name" : "Neutral: Ideals aren't worth killing for or going to war for."
+    }, {
+      "name" : "Neutral: People. I help people who help me--that's what keeps us alive."
+    }, {
+      "name" : "Chaotic: Respect. All people, rich or poor, deserve respect. ",
+      "alignmentName" : "Chaotic",
+      "id" : 55
+    }, {
+      "name" : "Evil: Greed. I will do whatever it takes to become wealthy. "
+    }, {
+      "name" : "Evil: Greed. I'm only in it for the money and fame. "
+    }, {
+      "name" : "Evil: Might. If I become strong, I can take what I want--what I deserve. "
+    }, {
+      "name" : "Evil: Greed. I'm only in it for the money. "
+    }, {
+      "name" : "Evil: Power. Solitude and contemplation are paths toward mystical or magical power. "
+    }, {
+      "name" : "Evil: Power. If I can attain more power, no one will tell me what to do. "
+    }, {
+      "name" : "Evil: Might. The strongest are meant to rule. "
+    }, {
+      "name" : "Evil: Power. Knowledge is the path to power and domination. "
+    }, {
+      "name" : "Evil: Master. I'm a predator, and the other ships on the sea are my prey. "
+    }, {
+      "name" : "Evil: Might. In life as in war, the stronger force wins. "
+    }, {
+      "name" : "Evil: Retribution. The rich need to be shown what life and death are like in the gutters. "
+    }, {
+      "name" : "Good: Charity. I always try to help those in need, no matter what the personal cost. "
+    }, {
+      "name" : "Good: Friendship. Material goods come and go. Bonds of friendship last forever. "
+    }, {
+      "name" : "Good: Charity. I steal from the wealthy so that I can help people in need. "
+    }, {
+      "name" : "Good: Redemption. There's a spark of good in everyone. "
+    }, {
+      "name" : "Good: Beauty. When I perform, I make the world better than it was. "
+    }, {
+      "name" : "Good: Respect. People deserve to be treated with dignity and respect. "
+    }, {
+      "name" : "Good: Sincerity. There's no good pretending to be something I'm not. (Neutral)"
+    }, {
+      "name" : "Good: Generosity. My talents were given to me so that I could use them to benefit the world. "
+    }, {
+      "name" : "Good: Greater Good. My gifts are meant to be shared with all, not used for my own benefit. "
+    }, {
+      "name" : "Good: Respect. Respect is due to me because of my position, but all people regardless of station deserve to be treated with dignity. "
+    }, {
+      "name" : "Good: Noble Obligation. It is my duty to protect and care for the people beneath me. "
+    }, {
+      "name" : "Good: Greater Good. It is each person's responsibility to make the most happiness for the whole tribe. "
+    }, {
+      "name" : "Good: Beauty. What is beautiful points us beyond itself toward what is true. "
+    }, {
+      "name" : "Good: Respect. The thing that keeps a ship together is mutual respect between captain and crew. "
+    }, {
+      "name" : "Good: Greater Good. Our lot is to lay down our lives in defense of others. "
+    }, {
+      "name" : "Good: Respect. All people, rich or poor, deserve respect. "
+    }, {
+      "name" : "Chaotic: Change. We must help bring about the changes the gods are constantly working in the world. "
+    }, {
+      "name" : "Chaotic: Independence. I am a free spirit--no one tells me what to do. "
+    }, {
+      "name" : "Chaotic: Creativity. I never run the same con twice. "
+    }, {
+      "name" : "Chaotic: Freedom. Chains are meant to be broken, as are those who would forge them. "
+    }, {
+      "name" : "Chaotic: Creativity. The world is in need of new ideas and bold action. "
+    }, {
+      "name" : "Chaotic: Freedom. Tyrants must not be allowed to oppress the people. "
+    }, {
+      "name" : "Chaotic: Freedom. Everyone should be free to pursue his or her livelihood. "
+    }, {
+      "name" : "Chaotic: Free Thinking. Inquiry and curiosity are the pillars of progress. "
+    }, {
+      "name" : "Chaotic: Independence. I must prove that I can handle myself without the coddling of my family. "
+    }, {
+      "name" : "Chaotic: Change. Life is like the seasons, in constant change, and we must change with it. "
+    }, {
+      "name" : "Chaotic: No Limits. Nothing should fetter the infinite possibility inherent in all existence. "
+    }, {
+      "name" : "Chaotic: Freedom. The sea is freedom--the freedom to go anywhere and do anything. "
+    }, {
+      "name" : "Chaotic: Independence. When people follow orders blindly they embrace a kind of tyranny. "
+    }, {
+      "name" : "Chaotic: Change. The low are lifted up, and the high and mighty are brought down. Change is the nature of things. "
+    }, {
+      "name" : "Unaligned: Aspiration. I seek to prove my self worthy of my god's favor by matching my actions against his or her teachings. "
+    }, {
+      "name" : "Unaligned: Aspiration. I'm determined to make something of myself. "
+    }, {
+      "name" : "Unaligned: Honesty. Art should reflect the soul; it should come from within and reveal who we really are. "
+    }, {
+      "name" : "Unaligned: Destiny. Nothing and no one can steer me away from my higher calling. "
+    }, {
+      "name" : "Unaligned: Aspiration. I work hard to be the best there is at my craft. "
+    }, {
+      "name" : "Unaligned: Self-Knowledge. If you know yourself, there're nothing left to know. "
+    }, {
+      "name" : "Unaligned: Family. Blood runs thicker than water. "
+    }, {
+      "name" : "Unaligned: Glory. I must earn glory in battle, for myself and my clan. "
+    }, {
+      "name" : "Unaligned: Aspiration. Someday I'll own my own ship and chart my own destiny. "
+    }, {
+      "name" : "Unaligned: Nation. My city, nation, or people are all that matter. "
+    }, {
+      "name" : "Unaligned: Aspiration. I'm going to prove that I'm worthy of a better life. "
+    }]
+},{
+  "_id" : "5c8d1e7e3ca04e2fec089406",
+  "NpcInteractionTraits" : [{
+      "name" : "Argumentative"
+    }, {
+      "name" : "Honest"
+    }, {
+      "name" : "Arrogant"
+    }, {
+      "name" : "Hot tempered"
+    }, {
+      "name" : "Blustering"
+    }, {
+      "name" : "Irritable"
+    }, {
+      "name" : "Rude"
+    }, {
+      "name" : "Ponderous"
+    }, {
+      "name" : "Curious"
+    }, {
+      "name" : "Quiet"
+    }, {
+      "name" : "Friendly"
+    }, {
+      "name" : "Suspicious"
+    }]
+},{
+  "_id" : "5c8d1e7e3ca04e2fec089407",
+  "NpcMannerisms" : [{
+      "name" : "Prone to singing, whistling, or humming quietly"
+    }, {
+      "name" : "Speaks in rhyme or some other peculiar way"
+    }, {
+      "name" : "Particularly low or high voice"
+    }, {
+      "name" : "Slurs words, lisps, or stutters"
+    }, {
+      "name" : "Enunciates overly clearly"
+    }, {
+      "name" : "Speaks loudly"
+    }, {
+      "name" : "Whispers"
+    }, {
+      "name" : "Uses flowery speech or long words"
+    }, {
+      "name" : "Frequently uses the wrong word"
+    }, {
+      "name" : "Uses colorful oaths and exclamations"
+    }, {
+      "name" : "Makes constant jokes or puns"
+    }, {
+      "name" : "Prone to predictions of doom"
+    }, {
+      "name" : "Fidgets"
+    }, {
+      "name" : "Squints"
+    }, {
+      "name" : "Stares into the distance"
+    }, {
+      "name" : "Chews something"
+    }, {
+      "name" : "Paces"
+    }, {
+      "name" : "Taps fingers"
+    }, {
+      "name" : "Bites fingernails"
+    }, {
+      "name" : "Twirls hair or tugs beard"
+    }, {
+      "name" : "I idolize a particular hero of my faith and constantly refer to that person's deeds and example."
+    }, {
+      "name" : "I can find common ground between the fiercest enemies, empathizing with them and always working toward peace."
+    }, {
+      "name" : "I see omens in every event and action. The gods try to speak to us, we just need to listen."
+    }, {
+      "name" : "Nothing can shake my optimistic attitude."
+    }, {
+      "name" : "I quote (or misquote) the sacred texts and proverbs in almost every situation."
+    }, {
+      "name" : "I am tolerant (or intolerant) of other faiths and respect (or condemn) the worship of other gods."
+    }, {
+      "name" : "I've enjoyed fine food, drink, and high society among my temple's elite. Rough living grates on me."
+    }, {
+      "name" : "I've spent so long in the temple that I have little practical experience dealing with people in the outside world."
+    }, {
+      "name" : "I fall in and out of love easily, and am always pursuing someone."
+    }, {
+      "name" : "I have a joke for every occasion, especially occasions where humor is inappropriate."
+    }, {
+      "name" : "Flattery is my preferred trick for getting what I want."
+    }, {
+      "name" : "I'm a born gambler who can't resist taking a risk for a potential payoff."
+    }, {
+      "name" : "I lie about almost everything, even when there's no good reason to."
+    }, {
+      "name" : "Sarcasm and insults are my weapons of choice."
+    }, {
+      "name" : "I keep multiple holy symbols on me and invoke whatever deity might come in useful at any given moment."
+    }, {
+      "name" : "I pocket anything I see that might have some value."
+    }, {
+      "name" : "I always have plan for what to do when things go wrong."
+    }, {
+      "name" : "I am always calm, no matter what the situation. I never raise my voice or let my emotions control me."
+    }, {
+      "name" : "The first thing I do in a new place is note the locations of everything valuable--or where such things could be hidden."
+    }, {
+      "name" : "I would rather make a new friend than a new enemy."
+    }, {
+      "name" : "I am incredibly slow to trust. Those who seem the fairest often have the most to hide."
+    }, {
+      "name" : "I don't pay attention to the risks in a situation. Never tell me the odds."
+    }, {
+      "name" : "The best way to get me to do something is to tell me I can't do it."
+    }, {
+      "name" : "I blow up at the slightest insult."
+    }, {
+      "name" : "I know a story relevant to almost every situation."
+    }, {
+      "name" : "Whenever I come to a new place, I collect local rumors and spread gossip."
+    }, {
+      "name" : "I'm a hopeless romantic, always searching for that 'special someone'."
+    }, {
+      "name" : "Nobody stays angry at me or around me for long, since I can defuse any amount of tension."
+    }, {
+      "name" : "I love a good insult, even one directed at me."
+    }, {
+      "name" : "I get bitter if I'm not the center of attention."
+    }, {
+      "name" : "I'll settle for nothing less than perfection."
+    }, {
+      "name" : "I change my mood or my mind as quickly as I change key in a song."
+    }, {
+      "name" : "I judge people by their actions, not their words."
+    }, {
+      "name" : "If someone is in trouble, I'm always willing to lend help."
+    }, {
+      "name" : "When I set my mind to something, I follow through no matter what gets in my way."
+    }, {
+      "name" : "I have a strong sense of fair play and always try to find the most equitable solution to arguments."
+    }, {
+      "name" : "I'm confident in my own abilities and do what I can to instill confidence in others."
+    }, {
+      "name" : "Thinking is for other people. I prefer action."
+    }, {
+      "name" : "I misuse long words in an attempt to sound smarter."
+    }, {
+      "name" : "I get bored easily. When am I going to get on with my destiny."
+    }, {
+      "name" : "I believe that everything worth doing is worth doing right. I can't help it--I'm a perfectionist."
+    }, {
+      "name" : "I'm a snob who looks down on those who can't appreciate fine art."
+    }, {
+      "name" : "I always want to know how things work and what makes people tick."
+    }, {
+      "name" : "I'm full of witty aphorisms and have a proverb for every occasion."
+    }, {
+      "name" : "I'm rude to people who lack my commitment to hard work and fair play."
+    }, {
+      "name" : "I like to talk at length about my profession."
+    }, {
+      "name" : "I don't part with my money easily and will haggle tirelessly to get the best deal possible."
+    }, {
+      "name" : "I'm well known for my work, and I want to make sure everyone appreciates it. I'm always taken aback when people haven't heard of me."
+    }, {
+      "name" : "I've been isolated for so long that I rarely speak, preferring gestures and the occasional grunt."
+    }, {
+      "name" : "I am utterly serene, even in the face of disaster."
+    }, {
+      "name" : "The leader of my community has something wise to say on every topic, and I am eager to share that wisdom."
+    }, {
+      "name" : "I feel tremendous empathy for all who suffer."
+    }, {
+      "name" : "I'm oblivious to etiquette and social expectations."
+    }, {
+      "name" : "I connect everything that happens to me to a grand cosmic plan."
+    }, {
+      "name" : "I often get lost in my own thoughts and contemplations, becoming oblivious to my surroundings."
+    }, {
+      "name" : "I am working on a grand philosophical theory and love sharing my ideas."
+    }, {
+      "name" : "My eloquent flattery makes everyone I talk to feel like the most wonderful and important person in the world."
+    }, {
+      "name" : "The common folk love me for my kindness and generosity."
+    }, {
+      "name" : "No one could doubt by looking at my regal bearing that I am a cut above the unwashed masses."
+    }, {
+      "name" : "I take great pains to always look my best and follow the latest fashions."
+    }, {
+      "name" : "I don't like to get my hands dirty, and I won't be caught dead in unsuitable accommodations."
+    }, {
+      "name" : "Despite my birth, I do not place myself above other folk. We all have the same blood."
+    }, {
+      "name" : "My favor, once lost, is lost forever."
+    }, {
+      "name" : "If you do me an injury, I will crush you, ruin your name, and salt your fields."
+    }, {
+      "name" : "I'm driven by a wanderlust that led me away from home."
+    }, {
+      "name" : "I watch over my friends as if they were a litter of newborn pups."
+    }, {
+      "name" : "I once ran twenty-five miles without stopping to warn my clan of an approaching orc horde. I'd do it again if I had to."
+    }, {
+      "name" : "I have a lesson for every situation, drawn from observing nature."
+    }, {
+      "name" : "I place no stock in wealthy or well-mannered folk. Money and manners won't save you from a hungry owlbear."
+    }, {
+      "name" : "I'm always picking things up, absently fiddling with them, and sometimes accidentally breaking them."
+    }, {
+      "name" : "I feel far more comfortable around animals than people."
+    }, {
+      "name" : "I was, in fact, raised by wolves."
+    }, {
+      "name" : "I use polysyllabic words to convey the impression of great erudition."
+    }, {
+      "name" : "I've read every book in the world's greatest libraries--or like to boast that I have."
+    }, {
+      "name" : "I'm used to helping out those who aren't as smart as I am, and I patiently explain anything and everything to others."
+    }, {
+      "name" : "There's nothing I like more than a good mystery."
+    }, {
+      "name" : "I'm willing to listen to every side of an argument before I make my own judgment."
+    }, {
+      "name" : "I...speak...slowly...when talking...to idiots...which...almost...everyone...is...compared ...to me."
+    }, {
+      "name" : "I am horribly, horribly awkward in social situations."
+    }, {
+      "name" : "I'm convinced that people are always trying to steal my secrets."
+    }, {
+      "name" : "My friends know they can rely on me, no matter what."
+    }, {
+      "name" : "I work hard so that I can play hard when the work is done."
+    }, {
+      "name" : "I enjoy sailing into new ports and making new friends over a flagon of ale."
+    }, {
+      "name" : "I stretch the truth for the sake of a good story."
+    }, {
+      "name" : "To me, a tavern brawl is a nice way to get to know a new city."
+    }, {
+      "name" : "I never pass up a friendly wager."
+    }, {
+      "name" : "My language is as foul as an otyugh nest."
+    }, {
+      "name" : "I like a job well done, especially if I can convince someone else to do it."
+    }, {
+      "name" : "I'm always polite and respectful."
+    }, {
+      "name" : "I'm haunted by memories of war. I can't get the images of violence out of my mind."
+    }, {
+      "name" : "I've lost too many friends, and I'm slow to make new ones."
+    }, {
+      "name" : "I'm full of inspiring and cautionary tales from my military experience relevant to almost every combat situation."
+    }, {
+      "name" : "I can stare down a hellhound without flinching."
+    }, {
+      "name" : "I enjoy being strong and like breaking things."
+    }, {
+      "name" : "I have a crude sense of humor."
+    }, {
+      "name" : "I face problems head-on. A simple direct solution is the best path to success."
+    }, {
+      "name" : "I hide scraps of food and trinkets away in my pockets."
+    }, {
+      "name" : "I ask a lot of questions."
+    }, {
+      "name" : "I like to squeeze into small places where no one else can get to me."
+    }, {
+      "name" : "I sleep with my back to a wall or tree, with everything I own wrapped in a bundle in my arms."
+    }, {
+      "name" : "I eat like a pig and have bad manners."
+    }, {
+      "name" : "I think anyone who's nice to me is hiding evil intent."
+    }, {
+      "name" : "I don't like to bathe."
+    }, {
+      "name" : "I bluntly say what other people are hinting or hiding."
+    }]
+},{
+  "_id" : "5c8d1e7e3ca04e2fec089408",
+  "NpcTalents" : [{
+      "name" : "Plays a musical instrument"
+    }, {
+      "name" : "Speaks several languages fluently"
+    }, {
+      "name" : "Unbelievably lucky"
+    }, {
+      "name" : "Perfect memory"
+    }, {
+      "name" : "Great with animals"
+    }, {
+      "name" : "Great with children"
+    }, {
+      "name" : "Great at solving puzzles"
+    }, {
+      "name" : "Great at one game"
+    }, {
+      "name" : "Great at impersonations"
+    }, {
+      "name" : "Draws beautifully"
+    }, {
+      "name" : "Paints beautifully"
+    }, {
+      "name" : "Sings beautifully"
+    }, {
+      "name" : "Drinks everyone under the table"
+    }, {
+      "name" : "Expert carpenter"
+    }, {
+      "name" : "Expert cook"
+    }, {
+      "name" : "Expert dart thrower and rock skipper"
+    }, {
+      "name" : "Expert juggler"
+    }, {
+      "name" : "Skilled actor and master of disguise"
+    }, {
+      "name" : "Skilled dancer"
+    }, {
+      "name" : "Knows thieves cant"
+    }]
+},{
+  "_id" : "5c8d1e7e3ca04e2fec089409",
+  "Races" : [{
+      "name" : "Dragonborn"
+    }, {
+      "name" : "Dwarf"
+    }, {
+      "name" : "Elf"
+    }, {
+      "name" : "Gnome"
+    }, {
+      "name" : "Half-Elf"
+    }, {
+      "name" : "Halfling"
+    }, {
+      "name" : "Half-Orc"
+    }, {
+      "name" : "Human"
+    }, {
+      "name" : "Tiefling"
+    }, {
+      "name" : "Aarakocra"
+    }, {
+      "name" : "Genasi"
+    }, {
+      "name" : "Aasimar"
+    }, {
+      "name" : "Bugbear"
+    }, {
+      "name" : "Firbolg"
+    }, {
+      "name" : "Goblin"
+    }, {
+      "name" : "Hobgoblin"
+    }, {
+      "name" : "Kenku"
+    }, {
+      "name" : "Kobold"
+    }, {
+      "name" : "Lizardfolk"
+    }, {
+      "name" : "Orc"
+    }, {
+      "name" : "Tabaxi"
+    }, {
+      "name" : "Triton"
+    }, {
+      "name" : "Yuan-ti"
+    }, {
+      "name" : "Feral Tiefling"
+    }, {
+      "name" : "Tortle"
+    }, {
+      "name" : "Gith"
+    }, {
+      "name" : "Centaur"
+    }, {
+      "name" : "Loxodon"
+    }, {
+      "name" : "Minotaur"
+    }]
+},{
+  "_id" : "5c8d1e7e3ca04e2fec08940a",
+  "VillianMethods" : [{
+      "children" : [{
+          "name" : "Blight"
+        }, {
+          "name" : "Crop Failure"
+        }, {
+          "name" : "Drought"
+        }, {
+          "name" : "Famine"
+        }],
+      "name" : "Agricultural Devastation"
+    }, {
+      "children" : null,
+      "name" : "Assault or beatings"
+    }, {
+      "children" : null,
+      "name" : "Bounty hunting or assassination"
+    }, {
+      "children" : [{
+          "name" : "Bribery"
+        }, {
+          "name" : "Enticement"
+        }, {
+          "name" : "Eviction"
+        }, {
+          "name" : "Imprisonment"
+        }, {
+          "name" : "Kidnapping"
+        }, {
+          "name" : "Legal intimidation"
+        }, {
+          "name" : "Press gangs"
+        }, {
+          "name" : "Shackling"
+        }],
+      "name" : "Captivity or coercion"
+    }, {
+      "children" : [{
+          "name" : "Breach of contract"
+        }, {
+          "name" : "Cheating"
+        }, {
+          "name" : "Fast talking "
+        }, {
+          "name" : "Fine print"
+        }, {
+          "name" : "Fraud or swindling"
+        }, {
+          "name" : "Quackery or tricks "
+        }],
+      "name" : "Confidence scams"
+    }, {
+      "children" : [{
+          "name" : "Framing"
+        }, {
+          "name" : "Gossiping or slander"
+        }, {
+          "name" : "Humiliation"
+        }, {
+          "name" : "Libel or insults"
+        }],
+      "name" : "Defamation"
+    }, {
+      "name" : "Dueling"
+    }, {
+      "children" : [{
+          "name" : "Beheading"
+        }, {
+          "name" : "Burning at the stake"
+        }, {
+          "name" : "Burying alive"
+        }, {
+          "name" : "Crucifixion"
+        }, {
+          "name" : "Drawing and quartering"
+        }, {
+          "name" : "Hanging"
+        }, {
+          "name" : "Impalement"
+        }, {
+          "name" : "Sacrifice (living)"
+        }],
+      "name" : "Execution"
+    }, {
+      "children" : null,
+      "name" : "Impersonation or disguise"
+    }, {
+      "children" : null,
+      "name" : "Lying or perjury"
+    }, {
+      "children" : [{
+          "name" : " Hauntings"
+        }, {
+          "name" : " Illusions"
+        }, {
+          "name" : " Infernal bargains"
+        }, {
+          "name" : " Mind control"
+        }, {
+          "name" : " Petrification"
+        }, {
+          "name" : " Raising or animating the dead"
+        }, {
+          "name" : " Summoning monsters"
+        }, {
+          "name" : " Weather control"
+        }],
+      "name" : "Magical mayhem"
+    }, {
+      "children" : [{
+          "name" : "Assassination"
+        }, {
+          "name" : "Cannibalism"
+        }, {
+          "name" : "Dismemberment"
+        }, {
+          "name" : "Drowning"
+        }, {
+          "name" : "Electrocution"
+        }, {
+          "name" : "Euthanasia (involuntary)"
+        }, {
+          "name" : "Disease"
+        }, {
+          "name" : "Poisoning"
+        }, {
+          "name" : "Stabbing"
+        }, {
+          "name" : "Strangulation or suffocation"
+        }],
+      "name" : "Murder"
+    }, {
+      "children" : null,
+      "name" : "Neglect"
+    }, {
+      "children" : [{
+          "name" : "Betrayal or treason"
+        }, {
+          "name" : "Conspiracy"
+        }, {
+          "name" : "Espionage or spying"
+        }, {
+          "name" : "Genocide"
+        }, {
+          "name" : "Oppression"
+        }, {
+          "name" : "Raising taxes"
+        }],
+      "name" : "Politics"
+    }, {
+      "children" : [{
+          "name" : "Curses"
+        }, {
+          "name" : "Desecration"
+        }, {
+          "name" : "False gods"
+        }, {
+          "name" : "Heresy or cults"
+        }],
+      "name" : "Religion"
+    }, {
+      "children" : null,
+      "name" : "Stalking"
+    }, {
+      "children" : [{
+          "name" : "Arson"
+        }, {
+          "name" : "Blackmail or extortion"
+        }, {
+          "name" : "Burglary"
+        }, {
+          "name" : "Counterfeiting"
+        }, {
+          "name" : "Highway robbery"
+        }, {
+          "name" : "Looting"
+        }, {
+          "name" : "Mugging"
+        }, {
+          "name" : "Poaching"
+        }, {
+          "name" : "Seizing property"
+        }, {
+          "name" : "Smuggling"
+        }],
+      "name" : "Theft or Property Crime"
+    }, {
+      "children" : [{
+          "name" : "Acid"
+        }, {
+          "name" : "Blinding"
+        }, {
+          "name" : "Branding"
+        }, {
+          "name" : "Racking"
+        }, {
+          "name" : "Thumbscrews"
+        }, {
+          "name" : "Whipping"
+        }],
+      "name" : "Torture"
+    }, {
+      "children" : [{
+          "name" : "Adultery"
+        }, {
+          "name" : "Drugs or alcohol"
+        }, {
+          "name" : "Gambling"
+        }, {
+          "name" : "Seduction"
+        }],
+      "name" : "Vice"
+    }, {
+      "children" : [{
+          "name" : "Ambush"
+        }, {
+          "name" : "Invasion"
+        }, {
+          "name" : "Massacre"
+        }, {
+          "name" : "Mercenaries"
+        }, {
+          "name" : "Rebellion"
+        }, {
+          "name" : "Terrorism"
+        }],
+      "name" : "Warfare"
+    }]
+},{
+  "_id" : "5c8d1e7e3ca04e2fec08940b",
+  "VillianObjectives" : [{
+      "children" : [{
+          "name" : "Acquire a legendary item to prolong life"
+        }, {
+          "name" : "Ascend to godhood"
+        }, {
+          "name" : "Become undead or obtain a younger body"
+        }, {
+          "name" : "Steal a planar creature's essence"
+        }],
+      "name" : "Immortality"
+    }, {
+      "children" : [{
+          "name" : "Seize a position of power or title"
+        }, {
+          "name" : "Win a contest or tournament"
+        }, {
+          "name" : "Win favor with a powerful individual"
+        }, {
+          "name" : "Place a pawn in a position of power"
+        }],
+      "name" : "Influence"
+    }, {
+      "children" : [{
+          "name" : "Obtain an ancient artifact"
+        }, {
+          "name" : "Build a construct or magical device"
+        }, {
+          "name" : "Carry out a deity's wishes"
+        }, {
+          "name" : "Offer sacrifices to a deity"
+        }, {
+          "name" : "Contact a lost deity or power"
+        }, {
+          "name" : "Open a gate to another world"
+        }],
+      "name" : "Magic"
+    }, {
+      "children" : [{
+          "name" : "Fulfil an apocalyptic prophecy"
+        }, {
+          "name" : "Enact the vengeful will of a god or patron"
+        }, {
+          "name" : "Spread a vile contagion"
+        }, {
+          "name" : "Overthrow a government"
+        }, {
+          "name" : "Trigger a natural disaster"
+        }, {
+          "name" : "Utterly destroy a bloodline or clan"
+        }],
+      "name" : "Mayhem"
+    }, {
+      "children" : [{
+          "name" : "Prolong the life of a loved one"
+        }, {
+          "name" : "Prove worthy of another person's love"
+        }, {
+          "name" : "Raise or restore a dead loved one"
+        }, {
+          "name" : "Destroy rivals for another person's affection"
+        }],
+      "name" : "Passion"
+    }, {
+      "children" : [{
+          "name" : "Conquer a region or incite a rebellion"
+        }, {
+          "name" : "Seize control of an army"
+        }, {
+          "name" : "Become the power behind the throne"
+        }, {
+          "name" : "Gain the favor of a ruler"
+        }],
+      "name" : "Power"
+    }, {
+      "children" : [{
+          "name" : "Avenge a past humiliation or insult"
+        }, {
+          "name" : "Avenge a past imprisonment or injury"
+        }, {
+          "name" : "Avenge the death of a loved one"
+        }, {
+          "name" : "Retrieve stolen property and punish the thief"
+        }],
+      "name" : "Revenge"
+    }, {
+      "children" : [{
+          "name" : "Control natural resources or trade"
+        }, {
+          "name" : "Marry into wealth"
+        }, {
+          "name" : "Plunder ancient ruins"
+        }, {
+          "name" : "Steal land, goods, or money"
+        }],
+      "name" : "Wealth"
+    }]
+},{
+  "_id" : "5c8d1e7e3ca04e2fec08940c",
+  "VillianWeakness" : [{
+      "name" : "A hidden object holds the villain's soul."
+    }, {
+      "name" : "The villain's power is broken if the death of its true love is avenged."
+    }, {
+      "name" : "The villain is weakened in the presence of a particular artifact."
+    }, {
+      "name" : "A special weapon deals extra damage when used against the villain."
+    }, {
+      "name" : "The villain is destroyed if it speaks its true name."
+    }, {
+      "name" : "An ancient prophecy or riddle reveals how the villain can be overthrown."
+    }, {
+      "name" : "The villain falls when an ancient enemy forgives its past actions."
+    }, {
+      "name" : "The villain loses its power if a mystic bargain it struck long ago is completed."
+    }, {
+      "name" : "Vulnerable to a damage type."
+    }, {
+      "name" : "Easily distracted or lured by treasure"
+    }, {
+      "name" : "None of their allies actually like the villain"
+    }]
+}]

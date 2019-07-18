@@ -3,7 +3,9 @@ using DndHelperApiDal.Repositories;
 using MongoDB.Bson;
 using MongoDB.Bson.IO;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
@@ -40,26 +42,8 @@ namespace DndHelperApiDal.Services
 
         public async Task<string> GetAllDocuments(string collectionName)
         {
-            var documents = await _repository.GetAllBsonDocumentsInCollection(collectionName);
-
-            var jsonDocuments = documents.Select(document =>
-                document
-                .ToJson
-                (
-                    new JsonWriterSettings { Indent = true, }
-                )
-            );
-
-            var jsonWithFixedIds = new List<string>();
-
-            foreach (var jsonDocument in jsonDocuments)
-            {
-                var regex = new Regex(@"ObjectId\(" + "\"" + @"(.{24})" + "\"" + @"\)");
-                var groups = regex.Matches(jsonDocument)[0];
-                jsonWithFixedIds.Add(jsonDocument.Replace(groups.Groups[0].Value, $"\"{groups.Groups[1].Value}\""));
-            }
-
-            return $"[{string.Join(",", jsonWithFixedIds)}]";
+            string executableLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            return File.ReadAllText(Path.Combine(executableLocation, "allTables.json"));
         }
 
         public async Task<bool> UpsertDocument(DocumentModelDto documentModelDto)
